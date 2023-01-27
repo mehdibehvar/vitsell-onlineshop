@@ -1,0 +1,132 @@
+.comments_section {
+  .register_comment {
+    .title {
+      .regist_title{
+         svg{
+            path{
+               fill: #D72339;
+            }
+         }
+      }
+      @include respond(mobile){
+         flex-direction: column
+      };
+      fieldset{
+         gap: 8px;
+      }
+      label {
+        margin-right: 5px;
+        font-weight: 700;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: right;
+      }
+      .radio_input {
+        width: 14px;
+        height: 14px;
+        border: 1px solid black;
+        border-radius: 7px;
+        position: relative;
+        &:checked{
+         border: 1px solid #219653;
+         &::before{
+              content:"";
+              color: #219653;
+              width: 6px;
+              height: 6px;
+              display: inline-block;
+              border: 1px solid #219653;
+              border-radius:3px;
+              background-color: #219653;
+              position: absolute;
+              top: 3px;
+              right: 3px;
+         }
+        }
+      }
+      .radio_input:checked ~ label {
+        color: #219653;
+      }
+    }
+    .comment_text_area {
+      .textarea_comment {
+        min-height: 84px;
+        padding: 12px;
+        background: #f7f7f7;
+        border-radius: 16px;
+        overflow-wrap: break-word;
+        &::placeholder {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          color: #7d7d7d;
+        }
+      }
+    };
+    .user_score{
+      margin-top: 8px;
+      .stars{
+         .stars_wrapper{
+            span{
+               margin-left: 12px;
+            }
+         }
+      }
+      .comment_submit{
+         padding: 8px 24px;
+gap: 8px;
+width: 152px;
+height: 40px;
+background: linear-gradient(252.18deg, #D72339 0.28%, #F23B51 93.8%);
+border-radius: 24px;
+font-weight: 700;
+font-size: 14px;
+line-height: 22px;
+align-items: center;
+color: #FFFFFF;
+      }
+    }
+  };
+  .comments_list{
+    .comment_box{
+      padding: 16px;
+gap: 16px;
+background: #F7F7F7;
+border-radius: 16px;
+margin-bottom: 12px;
+
+.comment_box_header{
+  @include flex_position(row,space-between,center);
+  h4{
+    :last-child{
+      font-weight: 700;
+  font-size: 14px;
+  line-height: 22px;
+  color: #282828;
+    }
+  };
+  @include respond(mobile){
+    @include flex_position(column,space-between,flex-start);
+  }
+}
+    }
+  };
+  .comment_mobile_carousel {
+    width: 380px;
+  overflow: hidden;
+  .comment_swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-pagination {
+      display: block;
+    }
+    .card_wrapper {
+      width: 100%;
+      padding: 8px;
+
+    }
+  }
+}
+}

@@ -1,0 +1,114 @@
+.slider {
+  .big_swiper {
+    .image_wrapper {
+      width: 100%;
+    }
+    border-radius: 24px;
+    overflow: hidden;
+    position: relative;
+    .swiper-button-prev {
+      @extend .navigate_icon_next;
+    }
+
+    .swiper-button-next {
+      @extend .navigate_icon_prev;
+    }
+
+    .swiper-pagination {
+      .swiper-pagination-bullet {
+        width: 8px;
+        height: 8px;
+        background: #c2123c;
+        opacity: 0.2;
+        border-radius: 18px;
+      }
+      :first-child {
+        width: 33px;
+        height: 8px;
+        background: #c2123c;
+        opacity: 1;
+        border-radius: 18px;
+      }
+    }
+  }
+  .small_swiper {
+    .image_wrapper {
+      width: 100%;
+      height: 373px;
+    }
+    background: #f7f7f7;
+    border-radius: 24px;
+    position: relative;
+    .swiper-button-prev {
+      @extend .navigate_icon_next;
+    }
+    .swiper-button-next {
+      @extend .navigate_icon_prev;
+    }
+    .swiper-pagination {
+      display: none;
+    }
+    .slide_details {
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      @include flex_position(column, space-between, flex-start);
+      margin-top: 20px;
+      margin-right: 16px;
+      margin-bottom: 20px;
+      margin-left: 16px;
+      gap: 12px;
+      width: 250px;
+      h4 {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 25px;
+        text-align: right;
+        color: #282828;
+      }
+      .price {
+        @include flex_position(row, flex-end, center);
+        width: 100%;
+        padding-left: 16px;
+        span {
+          font-weight: 900;
+          font-size: 20px;
+          line-height: 31px;
+          text-align: right;
+          color: #333333;
+        }
+        .toman {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          text-align: right;
+          color: #4f4f4f;
+        }
+      }
+      .discount {
+        @include flex_position(row, space-between, center);
+        width: 100%;
+        padding-left: 16px;
+        .discount_bag {
+          padding: 4px 12px;
+          width: 48px;
+          height: 30px;
+          background: $brand-primary-color;
+          border-radius: 80px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #ffffff;
+        }
+        span {
+          font-weight: 300;
+          font-size: 20px;
+          line-height: 31px;
+          text-decoration-line: line-through;
+          color: #bdbdbd;
+        }
+      }
+    }
+  }
+}

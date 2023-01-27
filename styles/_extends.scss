@@ -1,0 +1,31 @@
+////extends////////
+.navigate_icon_next {
+  position: absolute;
+  right: 0;
+  top: calc(50%);
+  &::after {
+    content: url("/assets/images/Arrow.svg");
+  }
+}
+.navigate_icon_prev {
+  position: absolute;
+  left: 0px;
+  top: calc(50%);
+  &::after {
+    content: url("/assets/images/Arrow2.svg");
+  }
+}
+.small_swiper {
+  background: #f7f7f7;
+  border-radius: 24px;
+  position: relative;
+  .swiper-button-prev {
+    @extend .navigate_icon_next;
+  }
+  .swiper-button-next {
+    @extend .navigate_icon_prev;
+  }
+  .swiper-pagination {
+    display: none;
+  }
+}

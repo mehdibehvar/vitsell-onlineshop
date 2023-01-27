@@ -1,0 +1,27 @@
+.banner_section_middle {
+  margin-top: 64px !important;
+  .right_banner {
+    height: 210px;
+    border-radius: 24px;
+    overflow: hidden;
+    background-image: url("/assets/images/image 28 (1).png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+  .left_banner {
+    @extend .right_banner;
+    background-image: url("/assets/images/image 29 (1).png");
+  }
+  @include respond(mobile) {
+    margin-top: 24px !important;
+    flex-direction: column-reverse;
+    .right_banner {
+      margin-top: 8px;
+      height: 106px;   
+    }
+    .left_banner {
+      height: 106px;
+    }
+  }
+}

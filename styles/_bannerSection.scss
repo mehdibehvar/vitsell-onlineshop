@@ -1,0 +1,26 @@
+.banner_section{
+    .right_banner{
+         height: 210px;
+         border-radius: 24px;
+         overflow: hidden;
+         background-image: url("/assets/images/image 29 (1).png");
+         background-size: cover;
+         background-position: center;
+         background-repeat: no-repeat
+    };
+    .left_banner{
+       @extend .right_banner;
+       background-image: url("/assets/images/image 28 (1).png")
+    };
+    @media screen and (max-width:576px) {
+       .right_banner{
+        background-image: url("/assets/images/image 28 (1).png");
+        height: 106px;
+        margin-top: 8px;
+       };
+       .left_banner{
+        height: 106px;
+        margin-top: 8px;
+       }
+    }
+}

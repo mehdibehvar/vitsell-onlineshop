@@ -1,0 +1,169 @@
+.navbar {
+  @include flex_position(row, space-between, center);
+  padding: 24px;
+  gap: 8px;
+  height: 80px;
+  box-shadow: 0px 0px 24px rgba(189, 182, 183, 0.25);
+  border-radius: 40px;
+  background: $navbar-bg-color;
+  .right_section {
+    @include flex_position(row, center, center);
+    gap: 24px;
+    padding: 0px;
+    height: 40px;
+    margin-right: 24px;
+    .logo_wrapper {
+      width: 40px;
+      height: 40px;
+    }
+    .links_list {
+      @include flex_position(row, center, center);
+      margin-bottom: 0;
+      gap: 26px;
+      border-radius: 4px;
+      li {
+        @include flex_position(row, flex-end, center);
+        padding: 0px;
+        gap: 4px;
+        height: 22px;
+        color: #4f4f4f;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        cursor: pointer;
+      }
+      .category {
+        position: relative;
+        span {
+          transition: all 0.5s ease;
+        }
+        .shev_up {
+          transform: rotate(180deg);
+        }
+        &:hover{
+          .dropdown_navbar_category{
+            height: 360px;
+            padding: 16px; 
+          }
+        }
+      }
+    }
+    .dropdown {
+      .dropdown-menu {
+        padding: 16px;
+        display: block;
+        background: #ffffff;
+        border-radius: 5px;
+        transform: translate3d(315px, 25.7143px, 0px);
+        transition: all 1s ease;
+        .dropdown-item {
+          @include flex_position(column, space-between, center);
+          .item {
+            @include flex_position(row, space-between, center);
+            padding: 4px;
+            gap: 8px;
+            width: 213px;
+            height: 27px;
+          }
+          margin-bottom: 16px;
+          .submenu {
+            ul.submenu_list {
+              @include flex_position(column, flex-start, flex-start);
+              gap: 8px;
+              width: 221px;
+              // border: 1px solid #a19f9f;
+              border-radius: 8px;
+              height: 0;
+              overflow: hidden;
+              transition: all 1s ease;
+              li {
+                @include flex_position(row, flex-start, flex-start);
+                border: 1px solid violet;
+                padding: 8px 8px 8px 24px;
+                width: 202px;
+                background: #ffffff;
+                border-radius: 12px;
+              }
+            }
+           .showsub{
+            @extend .submenu;
+               border: 1px solid #a19f9f;
+               border-radius: 8px;
+               height:200px!important;
+            }
+          }
+        }
+      }
+    }
+  }
+  .left_section_cta {
+    @include flex_position(row, center, center);
+    padding: 0px;
+    gap: 8px;
+    height: 48px;
+    margin-left: 24px;
+    .search {
+      position: relative;
+      .search_input {
+        background: #f7f7f7;
+        border-radius: 32px;
+        width: 254px;
+        height: 48px;
+        color: #121212;
+        font-size: 16px;
+        padding-right: 8px;
+        &::placeholder {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          color: #7d7d7d;
+          padding-right: 12px;
+        }
+        @include respond(mobile) {
+          width: 213px;
+        }
+      }
+      .search_button {
+        position: absolute;
+        top: 15px;
+        left: 13px;
+      }
+    }
+    .buy_basket {
+      width: 48px;
+      height: 48px;
+      background: #f7f7f7;
+      border-radius: 24px;
+      @include flex_position(row, center, center);
+      cursor: pointer;
+      svg:hover path {
+        fill: #f23b51;
+      }
+    }
+    .login_button {
+      text-align: center;
+      gap: 8px;
+      width: 126px;
+      height: 48px;
+      background: $brand-primary-color;
+      border-radius: 24px;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+      color: #ffffff;
+      &:hover {
+        background: #ffe9ee;
+        color: #c2123c;
+      }
+    }
+    .responsive_login {
+      @extend .buy_basket;
+    }
+  }
+  @include respond(mobile){
+    box-shadow:none;
+    background:none;
+    filter: drop-shadow(0px 0px 24px rgba(189, 182, 183, 0.25));
+    border-radius: 40px;
+  }
+}

@@ -1,0 +1,17 @@
+.amazing_mobile_card_slider {
+    width: 383px;
+  overflow: hidden;
+  margin-top: 8px;
+  .card_swiper {
+    .swiper-button-prev,
+    .swiper-button-next {
+      display: none;
+    }
+    .swiper-pagination {
+      display: none;
+    }
+    .card_wrapper {
+      width: 274px;
+    }
+  }
+}

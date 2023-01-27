@@ -1,0 +1,47 @@
+@import "_variabels";
+@import "_mixins";
+@import "_reset";
+@import "_extends";
+@import "_sliderSection";
+@import "_navbar";
+@import "_dropdownNavbar";
+@import "_layout";
+@import "_bannerSection";
+@import "_vitselDiscountSection";
+@import "_bannersecMiddle";
+@import "_favoriteSection";
+@import "_gridCard";
+@import "_sectionsHeader";
+@import "_Card";
+@import "_amazingSection";
+@import "_advertiseSection";
+@import "_vitsellBanner";
+@import "_footer";
+@import "_mobileHeader";
+@import "_dropdown";
+@import "_amazingSlider";
+@import "_vitselldropdown";
+@import "_productsLayout";
+@import "_sortingnavbar";
+@import "_productsSlider";
+@import "_productsCard";
+@import "./productsStyles/productsPage";
+@import "_horizCard";
+@import "./singleProductstyles/singleProduct";
+
+////font style////////////////
+@font-face {
+  font-family: IranSans;
+  src: url(#{$font-root}/IRANSans-web.woff) format("woff"),
+    url(#{$font-root}/iransans2.ttf) format("ttf");
+  font-weight: 100;
+  font-style: normal;
+}
+
+body {
+  background-color: #ffffff;
+  overflow-x: hidden;
+}
+*svg:hover path {
+  fill: #f23b51;
+}

@@ -1,0 +1,34 @@
+.sorting_navbar_section {
+  .sorting_navbar {
+    @include flex_position(row, space-between, center);
+    padding: 0px;
+    gap: 8px;
+    height: 40px;
+    border-radius: 40px;
+    .sorting {
+      @include flex_position(row, flex-start, flex-start);
+      padding: 0px;
+      gap: 24px;
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #7d7d7d;
+        .icons {
+          margin-left: 4px;
+        }
+      }
+      span.title {
+        color: #4f4f4f;
+      }
+    }
+    .products_number {
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        color: #4f4f4f;
+      }
+    }
+  }
+}

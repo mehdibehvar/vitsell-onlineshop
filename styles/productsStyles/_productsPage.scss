@@ -1,0 +1,12 @@
+@import "_productsWizard";
+@import "_productsSidebar";
+@import "_banner";
+@import "_rangeSlider";
+
+
+.products_content{
+    gap: 16px;
+    .products_page_slider{
+        width: fit-content;
+    }
+}

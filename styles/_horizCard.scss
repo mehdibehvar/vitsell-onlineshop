@@ -1,0 +1,102 @@
+.new_card_horizontal{
+@include flex_position(row, flex-start, center);
+padding: 12px;
+gap: 4px;
+isolation: isolate;
+height: 112px;
+min-width: 274px;
+max-width: 350px;
+background: #F7F7F7;
+border-radius: 24px;
+position: relative;
+overflow: hidden;
+.photo_wrapper{
+width: 88px;
+height: 88px;
+};
+.flag {
+    position: absolute;
+    width: 28px;
+    height: 36px;
+    left: 12px;
+    top: 0px;
+    background: #ffe9ee;
+    @include flex_position(row, center, flex-start);
+    padding-top: 4px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: 27px;
+      width: 0px;
+      height: 0px;
+      border-left: 28px solid transparent;
+      border-right: 28px solid transparent;
+      border-bottom: 16px solid #f7f7f7;
+    }
+  };
+  .product_info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    width:75%;
+    .title {
+        @include flex_position(row,flex-start,center);
+        width: 100%;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: right;
+        color: #333333;
+    }
+    .pricing {
+      padding: 0px;
+      width: 100%;
+      .product_price {
+        @include flex_position(row, flex-end, center);
+        padding: 0px;
+        gap: 2px;
+        :first-child {
+          font-weight: 900;
+          font-size: 18px;
+          line-height: 28px;
+          text-align: right;
+          color: #333333;
+        }
+        :last-child {
+          font-weight: 400;
+          font-size: 12px;
+          line-height: 19px;
+          text-align: right;
+          color: #4f4f4f;
+        }
+      }
+      .product_dicount {
+        @include flex_position(row, space-between, center);
+        padding: 0px;
+        gap: 2px;
+        width: 100%;
+        .discount_bag {
+          padding: 4px 12px;
+          width: 48px;
+          height: 30px;
+          background: $brand-primary-color;
+          border-radius: 80px;
+          font-weight: 700;
+          font-size: 14px;
+          line-height: 22px;
+          text-align: center;
+          color: #ffffff;
+        }
+        .discount_value {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 22px;
+          text-decoration-line: line-through;
+          color: #bdbdbd;
+        }
+      }
+    }
+  }
+}

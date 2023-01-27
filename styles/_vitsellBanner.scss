@@ -1,0 +1,100 @@
+.vitsell_section {
+  height: 299px;
+  margin-top: 64px!important;
+  .vitsell_banner {
+    width: 888px;
+    height: 155px;
+    background: linear-gradient(239.65deg, #ce273b 14.24%, #f23b51 126.89%);
+    border-radius: 24px;
+    position: relative;
+    .mobile {
+      position: absolute;
+      width: 230px;
+      height: 277px;
+      left: 56px;
+      bottom: 0px;
+      background-image: url("/assets/images/Mobile.png");
+    }
+    .banner_info {
+      @include flex_position(column, flex-start, flex-start);
+      padding: 0px;
+      gap: 15px;
+      position: absolute;
+      width: 450px;
+      height: 91px;
+      right: 32px;
+      top: 32px;
+      .title {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: right;
+        color: $secondary-text-color;
+      }
+      .buttons_wrapper {
+        @include flex_position(row, space-between, center);
+        gap: 12px;
+        .text {
+          font-weight: 700;
+          font-size: 14px;
+          color: $secondary-text-color;
+        }
+        .download_buttons {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          gap: 8px;
+          background: rgba(255, 255, 255, 0.08);
+          border-radius: 24px;
+          height: 48px;
+          .myket_icon{
+            background-image: url("/assets/images/myket.png");
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+          }
+          .android_icon{
+            background-image: url("/assets/images/Android.png");
+            width: 24px;
+            height: 24px;
+            background-size: cover;
+
+          }
+        }
+      }
+      @include respond(mobile){
+        @include flex_position(column, flex-end, flex-start);
+        width: 351px;
+        height: 154px;
+        gap: 15px;
+        right:16px;
+        top: 16px;
+        .buttons_wrapper{
+          @include flex_position(column,flex-start, flex-start);
+          width: 351px;
+          gap: 12px;
+          .download_buttons{
+            @include flex_position(row,center,center);
+          }
+          .android{
+          width: 351px;
+          }
+        .myket,.bazar{
+            width: 169.5px;
+            height: 48px;
+          }
+          .bazar{margin-left: 12px;}
+        }
+      }
+    }
+  }
+  @include respond(mobile){
+    height: 186px;
+    margin-top: 24px!important;
+.vitsell_banner{
+  width: 383px;
+  height: 186px;
+}
+  }
+
+}

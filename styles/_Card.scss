@@ -1,0 +1,175 @@
+.card_column {
+  @include flex_position(column, flex-start, center);
+  padding: 16px;
+  gap: 20px;
+  height: 368px;
+  background: #f7f7f7;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  .flag {
+    position: absolute;
+    width: 28px;
+    height: 36px;
+    left: 12px;
+    top: 0px;
+    background: #ffe9ee;
+    @include flex_position(row, center, flex-start);
+    padding-top: 4px;
+    &::before {
+      content: "";
+      position: absolute;
+      left: -14px;
+      top: 27px;
+      width: 0px;
+      height: 0px;
+      border-left: 28px solid transparent;
+      border-right: 28px solid transparent;
+      border-bottom: 16px solid #f7f7f7;
+    }
+  };
+  .card_info {
+    @include flex_position(column, space-between, flex-end);
+    gap: 12px;
+    height: 112px;
+    width: 100%;
+    .title_wrapper {
+      width: 100%;
+      text-align: right;
+      .title {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 25px;
+        color: #282828;
+      }
+    }
+    .price {
+      @include flex_position(row, flex-end, center);
+      width: 100%;
+      height: 31px;
+      span {
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 31px;
+        text-align: right;
+        color: #333333;
+      }
+      .toman {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: right;
+        color: #4f4f4f;
+      }
+    }
+    .discount {
+      @include flex_position(row, space-between, center);
+      width: 100%;
+      // padding-left: 16px;
+      .discount_bag {
+        padding: 4px 12px;
+        width: 48px;
+        height: 30px;
+        background: $brand-primary-color;
+        border-radius: 80px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
+      }
+      span {
+        font-weight: 300;
+        font-size: 20px;
+        line-height: 31px;
+        text-decoration-line: line-through;
+        color: #bdbdbd;
+      }
+    }
+  }
+}
+.card_row {
+  background: #f7f7f7;
+  border-radius: 24px;
+  position: relative;
+  overflow: hidden;
+  @include flex_position(row, space-between, center);
+  height: 112px;
+  gap: 12px;
+  padding: 12px;
+  padding-right: 0px;
+  svg {
+    position: absolute;
+    width: 28px;
+    height: 36px;
+    left: 12px;
+    top: 0px;
+    background: #ffe9ee;
+    // ::after{
+  
+    // }
+  }  
+  .card_info {
+    @include flex_position(column, flex-end, flex-end);
+    gap: 8px;
+    height: 112px;
+    width:fit-content;
+    .title_wrapper {
+      width: 100%;
+      text-align: right;
+      margin-left: 12px;
+      .title {
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 22px;
+        color: #333333;
+       
+      }
+    }
+    .price {
+      @include flex_position(row, flex-end, center);
+      width: 100%;
+      height: 31px;
+      gap: 2px;
+      span {
+        font-weight: 900;
+        font-size: 18px;
+        line-height: 28px;
+        text-align: right;
+        color: #333333;
+      }
+      .toman {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 19px;
+        text-align: right;
+        color: #4f4f4f;
+      }
+    }
+    .discount {
+      @include flex_position(row, space-between, center);
+      gap: 14px;
+      .discount_bag {
+        padding: 4px 12px;
+        width: 48px;
+        height: 30px;
+        background: $brand-primary-color;
+        border-radius: 80px;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 22px;
+        text-align: center;
+        color: #ffffff;
+      }
+      span {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 22px;
+        width: 87px;
+        text-align: left;
+        text-decoration-line: line-through;
+        color: #bdbdbd;
+      }
+    }
+  }
+}

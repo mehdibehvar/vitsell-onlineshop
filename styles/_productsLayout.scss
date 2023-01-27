@@ -1,0 +1,10 @@
+.products_layout{
+    padding: 32px 24px!important;
+
+@include respond(mobile){
+    padding-top: 0px!important;
+    padding-left: 16px!important;
+    padding-right: 16px!important;
+    // overflow-x: hidden;
+}
+}

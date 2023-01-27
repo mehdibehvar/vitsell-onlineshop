@@ -1,0 +1,60 @@
+.sections_header { 
+  @include flex_position(row, space-between, center);
+  padding: 0px;
+  height: 40px;
+  gap: 24px;
+  .discount_icon {
+    width: 40px;
+    height: 40px;
+    background: #f7f7f7;
+    border-radius: 20px;
+    @include flex_position(row, center, center);
+    margin-left: 12px;
+    @include respond(mobile){margin-left:2px;}
+  }
+  h4.head_title {
+    font-weight: 900;
+    font-size: 18px;
+    line-height: 28px;
+    text-align: right;
+    color: $main-text-color;
+  }
+  .fav_title {
+    font-size: 16px;
+  }
+  .amaz_title{
+font-size: 18px;
+
+  }
+  .space_border {
+// width: 60%;
+ flex-grow: 1;
+    height: 0px;
+    border: 1px solid #ffe9ee;
+  }
+  .see_all {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #4f4f4f;
+    @include flex_position(row, flex-start, center);
+    .shevron_icon {
+      font-size: 16px;
+      padding-top: 3px;
+    }
+    &:hover{
+      color:#C2123C;
+    }
+  }
+  @include respond(mobile) {
+    gap: 8px;
+    .see_all {
+      display: none;
+    }
+    h4.head_title {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 22px;
+    }
+  }
+}

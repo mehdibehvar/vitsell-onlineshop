@@ -1,0 +1,110 @@
+.single_product_info {
+  @include respond(mobile){
+    @include flex_position(column,flex-start,center);
+  
+  }
+  .product_info {
+    .product_features {
+      @include flex_position(column, flex-start, flex-start);
+      padding: 16px;
+      gap: 20px;
+      .product_name {
+        font-weight: 900;
+        font-size: 16px;
+        line-height: 25px;
+        color: #333333;
+      }
+      .likes {
+        span {
+          font-weight: 400;
+          font-size: 14px;
+          color: #4f4f4f;
+        }
+      }
+  
+      .description {
+        h5 {
+          font-weight: 900;
+          font-size: 16px;
+          line-height: 25px;
+          text-align: right;
+          color: #282828;
+        };
+        .summary{
+            font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+color: #333333;
+        }
+        .show_more {
+          :first-child {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 22px;
+            color: #4f4f4f;
+          }
+          :last-child {
+            color: #4f4f4f;
+            font-size: 8px;
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+//////check/////////////////////
+.color_checkbox {
+  width: 32px;
+  height: 32px;
+  border-radius: 20px;
+  position: relative;
+  margin-left: 12px;
+  input {
+    width: 32px;
+    height: 32px;
+    border-radius: 20px;
+    background: none;
+  }
+  .checkmark {
+    position: absolute;
+    right: -4px;
+    top: -4px;
+    display: none;
+  }
+  input:checked ~ .checkmark {
+    display: inline-block;
+    position: absolute;
+    right: -2px;
+    top: 0px;
+  }
+}
+.key_properties {
+  gap: 9px;
+  h5 {
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 25px;
+    color: #282828;
+  }
+  .properties_list {
+    gap: 9px;
+    li {
+      list-style: circle inside;
+      padding-right: 8px;
+    }
+    .property {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 25px;
+      color: #7d7d7d;
+    }
+    .property_value {
+      color: #282828;
+      margin-right: 8px;
+      font-weight: 700;
+      font-size: 14px;
+    }
+  }
+}

@@ -1,0 +1,48 @@
+/////mixins/////////////////////
+@mixin main_border {
+    border-bottom: 1px solid rgb(235, 235, 235);
+  }
+  @mixin shadow {
+    box-shadow: 0px 2px 8px rgba(91, 91, 91, 0.2);
+  }
+  @mixin flex_position($direction, $justify-content, $align-items) {
+    display: flex;
+    flex-direction: $direction;
+    justify-content: $justify-content;
+    align-items: $align-items;
+  }
+  @mixin button_border {
+    border: 1px solid #dddddd;
+  }
+  @mixin border_top {
+    border-top:1px solid rgb(215, 213, 213);
+  }
+  @mixin dropDown_border{
+    border:1px solid rgb(215, 213, 213);
+    border-radius: 10px;
+  }
+   // respond is the name of your mixin
+
+   @mixin respond ($breakpoint) {
+    @if $breakpoint==tablet {
+
+    @media only screen and (max-width: 1200px) {
+      @content;
+    }
+  }
+  @if $breakpoint==mobile {
+    @media only screen and (max-width: 576px) {
+      @content;
+    }
+  }
+  @if $breakpoint==laptop {
+    @media only screen and (max-width: 1280px) {
+      @content;
+    }
+  }
+  @if $breakpoint==extra {
+    @media only screen and (min-width: 1280px) {
+      @content;
+    }
+  }
+}
