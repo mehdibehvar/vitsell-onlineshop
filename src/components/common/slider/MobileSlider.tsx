@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Iimagedata } from "../../../../types";
 import SlideInfo from "../../slider/SlideInfo";
+import Link from "next/link";
 
 
 
@@ -32,14 +33,14 @@ const MobileSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) => 
       >
         {IMAGESDATA.map((item, index) => (
           <SwiperSlide key={item.alt}>
-            <div className="swiper_image_wrapper">
+          <Link href={`/product/${item.alt}`}>  <div className="swiper_image_wrapper">
               <Image
                 src={`${item.url}`}
                 alt={`${item.alt}`}
                 fill
                 priority={priority}
               />
-            </div>
+            </div></Link>
             {hasDetails && (
            <SlideInfo InfoClass={InfoClass} item={item}/>
             )}

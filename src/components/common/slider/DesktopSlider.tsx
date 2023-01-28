@@ -6,16 +6,15 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { Iimagedata } from "../../../../types";
 import SlideInfo from "../../slider/SlideInfo";
+import Link from "next/link";
 
 
 
 interface IProps {
   IMAGESDATA: Iimagedata[];
   hasDetails: boolean;
- 
   InfoClass:string,
   spaceBetween:number,
-  customPerView?:number,
   priority:boolean
 }
 const DesktopSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) => {
@@ -34,7 +33,8 @@ const DesktopSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) =>
       >
         {IMAGESDATA.map((item, index) => (
           <SwiperSlide key={item.alt}>
-            <div className="swiper_image_wrapper">
+          <Link href={`/product/${item.alt}`}>
+          <div className="swiper_image_wrapper">
               <Image
                 src={`${item.url}`}
                 alt={`${item.alt}`}
@@ -42,6 +42,7 @@ const DesktopSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) =>
                 priority={priority}
               />
             </div>
+          </Link>
             {hasDetails && (
            <SlideInfo InfoClass={InfoClass} item={item}/>
             )}

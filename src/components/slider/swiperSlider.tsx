@@ -8,6 +8,7 @@ import { Iimagedata } from "../../../types";
 import SlideInfo from "./SlideInfo";
 import { useWindowDimensions } from "../../utils/useWindowDimensions";
 import { useEffect, useState } from "react";
+import Link from "next/link";
 interface IProps {
   IMAGESDATA: Iimagedata[];
   width: number;
@@ -47,7 +48,8 @@ useEffect(()=>{
       >
         {IMAGESDATA.map((item, index) => (
           <SwiperSlide key={item.alt}>
-            <div className="image_wrapper">
+          <Link href="/product/2">
+          <div className="image_wrapper">
               <Image
                 src={`${item.url}`}
                 alt={`${item.alt}`}
@@ -56,6 +58,7 @@ useEffect(()=>{
                 priority={priority}
               />
             </div>
+          </Link>
             {hasDetails && (
            <SlideInfo InfoClass={InfoClass} item={item}/>
             )}

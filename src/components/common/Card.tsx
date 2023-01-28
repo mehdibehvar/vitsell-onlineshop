@@ -3,6 +3,7 @@ import { Iimagedata } from "../../../types";
 import CardInfo from "./CardInfo";
 import { ReactElement } from 'react'
 import { FireIcon } from "../icons/icons";
+import Link from "next/link";
 interface IProps {
   item: Iimagedata;
   width: number;
@@ -12,7 +13,8 @@ interface IProps {
 }
 const Card = ({ item, width, height, Icon,flexDir }: IProps) => {
   return (
-    <div className={flexDir==="column"?"card_column":"card_row"}>
+  <Link href={`/product/${item.title}`}>
+      <div className={flexDir==="column"?"card_column":"card_row"}>
       <Image
         src={`${item.url}`}
         alt={`${item.alt}`}
@@ -24,6 +26,7 @@ const Card = ({ item, width, height, Icon,flexDir }: IProps) => {
        <FireIcon color="#D72339"/>
     </div>
     </div>
+  </Link>
   );
 };
 

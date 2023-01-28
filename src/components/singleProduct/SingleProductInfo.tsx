@@ -5,9 +5,7 @@ import PricingSidebar from "./PricingSidebar";
 import ProductFeatures from "./ProductFeatures";
 import ProductGallery from "./ProductGallery";
 
-const SwiperSlider = dynamic(() => import("../slider/swiperSlider"), {
-  ssr: false,
-});
+
 const SingleProductInfo = () => {
   return (
     <Row>

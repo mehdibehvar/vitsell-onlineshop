@@ -5,7 +5,7 @@ import ProductSpicifications from "./ProductSpicifications";
 
 
 const ProductIntroNavSection = () => {
-  const [navSelected, setnavSelected] = useState<number>(1);
+  const [navSelected, setnavSelected] = useState<number|null>(null);
 useEffect(() => {
 if (navSelected===1) {
   window.scroll({

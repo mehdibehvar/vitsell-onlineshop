@@ -1,10 +1,12 @@
 import Image from "next/image"
 import ProductInfo from "./ProductInfo";
 import { FireIcon } from "../icons/icons";
+import Link from "next/link";
 
 const HorizCard = ({item}:{item:any}) => {
   return (
-    <div   className="new_card_horizontal">
+  <Link href={`/product/${item.alt}`}>
+      <div   className="new_card_horizontal">
     <div className="photo_wrapper">
     <Image
       src={`${item.url}`}
@@ -18,6 +20,7 @@ const HorizCard = ({item}:{item:any}) => {
        <FireIcon color="#D72339"/>
     </div>
     </div>
+  </Link>
   )
 }
 

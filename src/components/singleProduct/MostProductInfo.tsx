@@ -39,9 +39,9 @@ const MostProductInfo = () => {
               <DisplayComments />
             </section>
 
-            <section className="similar_products_section">
+            <section className="similar_products_section w-100">
               <SectionsHeader title="محصولات مشابه" icon={<SimilarIcon />} />
-              <div className="desktop_slider_wrapper d-none d-sm-block mt-3">
+              <div className="product_desktop_slider_wrapper d-none d-sm-block mt-3">
                 <DesktopSlider
                   IMAGESDATA={DISCOUNTIMAGESDATA}
                   hasDetails={true}
@@ -50,7 +50,7 @@ const MostProductInfo = () => {
                   priority={false}
                 />
               </div>
-              <div className="mobile_slider_wrapper d-block d-sm-none mt-2">
+              <div className="product_mobile_slider_wrapper d-block d-sm-none mt-2">
                 <MobileSlider
                   IMAGESDATA={DISCOUNTIMAGESDATA}
                   hasDetails={true}

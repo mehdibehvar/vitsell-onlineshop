@@ -61,7 +61,7 @@ const ProductGallery = () => {
       modules={[Thumbs]}
       watchSlidesProgress
       // onSwiper={setThumbsSwiper}
-      onSwiper={(swiper)=>console.log(swiper)}
+      // onSwiper={(swiper)=>console.log(swiper)}
       
     >
       {ProductImageDATA.map((item, index) => (

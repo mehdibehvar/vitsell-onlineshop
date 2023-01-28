@@ -62,11 +62,17 @@
     }
     /////similar-producs-section///
     .similar_products_section {
-      .desktop_slider_wrapper {
-        max-width: 1022px;
+      .product_desktop_slider_wrapper {
+        @include respond(laptop){
+          max-width:910px !important;
       }
-      .mobile_slider_wrapper {
-        width: 382px;
+      @include respond(extra){
+          max-width:1050px !important;
+      }
+      
+      }
+      .product_mobile_slider_wrapper {
+        width: 382px!important;
       }
     }
   }
