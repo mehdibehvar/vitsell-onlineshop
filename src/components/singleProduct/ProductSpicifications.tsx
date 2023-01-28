@@ -6,10 +6,12 @@ import KeySpicifications from './KeySpecifications'
 const ProductSpicifications = () => {
   return (
    <>
-   <article className='article_specifications'>
+   <article className='article_specifications w-100'>
    <SectionsHeader icon={<FeaturesIcon/>}  title="مشخصات" link=""/>
-  <div className='speci_wrapper'>
-  <KeySpicifications hastitle={false}/>
+  <div className='speci_wrapper w-100'>
+  
+  <KeySpicifications className="indent" hastitle={false}/>
+
   </div>
    </article>
    </>

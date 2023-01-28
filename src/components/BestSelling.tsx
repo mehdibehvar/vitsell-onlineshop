@@ -19,9 +19,9 @@ const BestSelling = () => {
       <SectionsHeader link="/" title="پرفروش ترین محصولات" icon={<DiscountIcon/>}/>
         <SwiperSlider
           IMAGESDATA={DISCOUNTIMAGESDATA}
-          hasDetails={true}
           width={112}
           height={112}
+          hasDetails={true}
           className="discount_swiper"
           InfoClass="discount_info"
           spaceBetween={4}

@@ -1,5 +1,6 @@
 import dynamic from "next/dynamic";
 import { Col, Row } from "reactstrap";
+
 import PricingSidebar from "./PricingSidebar";
 import ProductFeatures from "./ProductFeatures";
 import ProductGallery from "./ProductGallery";
@@ -13,11 +14,14 @@ const SingleProductInfo = () => {
       <Col className="p-1">
         <section className="single_product_info">
           <ProductGallery />
-          <article className="product_info">
+          <article className="product_info border-2 ">
             <ProductFeatures />
+    
           </article>
           <PricingSidebar />
+    
         </section>
+    
       </Col>
     </Row>
   );

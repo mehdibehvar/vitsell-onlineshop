@@ -5,17 +5,18 @@ interface IProps {
   icon?: ReactElement;
   title: string;
   link?: string;
-  commentNumber?:number
+  commentNumber?:number,
+  showMobIcon?:boolean
 }
-const SectionsHeader = ({ icon, title, link,commentNumber }: IProps) => {
+const SectionsHeader = ({ icon, title, link,commentNumber,showMobIcon }: IProps) => {
   return (
     <header className="sections_header px-0">
       <div className="d-flex align-items-center justify-content-start">
         {" "}
         <div className="d-flex align-items-center justify-content-between ">
-          <span className="discount_icon">{icon}</span>
+          <span className={`discount_icon ${showMobIcon?"":"hide_icon"}`}>{icon}</span>
           <h4 className="m-0 p-0 head_title">{title}</h4>
-          {commentNumber&&<span style={{color:" #7D7D7D"}} className="comment_number">({commentNumber} {" "}
+          {commentNumber&&<span style={{color:" #7D7D7D"}} className="comment_number me-2">({commentNumber} {" "}
           نظر)</span>}
         </div>
       </div>

@@ -69,15 +69,13 @@ color: #333333;
   }
   .checkmark {
     position: absolute;
-    right: -4px;
-    top: -4px;
+    right: 0;
+    top: 0;
     display: none;
   }
   input:checked ~ .checkmark {
     display: inline-block;
-    position: absolute;
-    right: -2px;
-    top: 0px;
+
   }
 }
 .key_properties {
@@ -90,8 +88,11 @@ color: #333333;
   }
   .properties_list {
     gap: 9px;
+    list-style-type: disc;
+    list-style-position: inside;
+    color: $text-gray-color;
+    font-size: 9px;
     li {
-      list-style: circle inside;
       padding-right: 8px;
     }
     .property {
@@ -106,5 +107,10 @@ color: #333333;
       font-weight: 700;
       font-size: 14px;
     }
+  }
+}
+.coloring{
+  @include respond(mobile){
+    flex-direction: column;
   }
 }

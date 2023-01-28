@@ -1,3 +1,4 @@
+import AddToCard from "../common/AddToCard";
 import Button from "../common/button/Button";
 import Price from "../common/Price";
 
@@ -42,15 +43,7 @@ const PricingSidebar = () => {
      </div>
      </section>
      </div>
-     <div className="discount_price">
-     <Price price={"۴,۳۴۳,۰۰۰"} percent={"۳۴٪ "} discount={"۴,۳۴۳,۰۰۰"}/>
-     </div>
-     <div className="addto_basket">
-      <Button className="addto_basket_button" type="button">
-        <span><AddIcon/></span>
-        <span>افزودن به سبد خرید</span>
-      </Button>
-     </div>
+     <AddToCard/>
     </div>
     <div className="warning">
       <span><WarningIcon/></span>

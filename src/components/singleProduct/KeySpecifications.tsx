@@ -1,33 +1,16 @@
 import React from 'react'
+import AddToCard from '../common/AddToCard'
 
-const KeySpicifications = ({hastitle}:{hastitle:boolean}) => {
+const KeySpicifications = ({hastitle,className}:{hastitle:boolean,className?:string}) => {
   return (
-    <div className="key_properties d-flex flex-column">
+    <div className={`${className} key_properties d-flex flex-column w-100`}>
     {hastitle&&<h5>ویژگی های کلیدی</h5>}
     <ul className="properties_list d-flex flex-column">
-      <li>
+   
+{[1,2,3,4].map((item,index)=><li key={index}>
         <span className="property"> فن آوری صفحه نمایش :</span>
         <span className="property_value">Liquid Retina</span>
-      </li>
-      <li>
-        <span className="property"> فن آوری صفحه نمایش :</span>
-        <span className="property_value">Liquid Retina</span>
-      </li>
-      <li>
-        <span className="property"> فن آوری صفحه نمایش :</span>
-        <span className="property_value">Liquid Retina</span>
-      </li>
-      <li>
-        <span className="property"> فن آوری صفحه نمایش :</span>
-        <span className="property_value">Liquid Retina</span>
-      </li>
-      <li>
-        <span className="property">اقلام همراه:</span>
-        <span className="property_value">
-          {" "}
-          : دفترچه‌ راهنما، شارژر، کابل USB
-        </span>
-      </li>
+      </li>)}
     </ul>
   </div>
   )

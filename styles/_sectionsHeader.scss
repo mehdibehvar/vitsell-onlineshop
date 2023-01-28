@@ -10,7 +10,10 @@
     border-radius: 20px;
     @include flex_position(row, center, center);
     margin-left: 12px;
-    @include respond(mobile){margin-left:2px;}
+    @include respond(mobile){
+      margin-left:2px;
+    
+    }
   }
   h4.head_title {
     font-weight: 900;
@@ -55,6 +58,12 @@ font-size: 18px;
       font-weight: 700;
       font-size: 14px;
       line-height: 22px;
-    }
+    };
+    .discount_icon.hide_icon{
+      display: none;
+    };
+
+      // margin-right: 4px;
+
   }
 }

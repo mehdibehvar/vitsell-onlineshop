@@ -64,7 +64,7 @@
       }
     };
     .user_score{
-      margin-top: 8px;
+  
       .stars{
          .stars_wrapper{
             span{
@@ -87,30 +87,7 @@ color: #FFFFFF;
       }
     }
   };
-  .comments_list{
-    .comment_box{
-      padding: 16px;
-gap: 16px;
-background: #F7F7F7;
-border-radius: 16px;
-margin-bottom: 12px;
 
-.comment_box_header{
-  @include flex_position(row,space-between,center);
-  h4{
-    :last-child{
-      font-weight: 700;
-  font-size: 14px;
-  line-height: 22px;
-  color: #282828;
-    }
-  };
-  @include respond(mobile){
-    @include flex_position(column,space-between,flex-start);
-  }
-}
-    }
-  };
   .comment_mobile_carousel {
     width: 380px;
   overflow: hidden;
@@ -121,12 +98,52 @@ margin-bottom: 12px;
     }
     .swiper-pagination {
       display: block;
+      bottom: -6px;
     }
     .card_wrapper {
       width: 100%;
       padding: 8px;
 
     }
+  }
+}
+}
+.comment_box{
+  padding: 16px;
+gap: 16px;
+background: #F7F7F7;
+border-radius: 16px;
+margin-bottom: 12px;
+
+.comment_box_header{
+  @include flex_position(row,space-between,center);
+  h4{
+    .user_square_icon{
+     svg{
+      path{
+        fill:$icon-red-color;
+      }
+     }
+    }
+    :last-child{
+    font-weight: 700;
+  font-size: 14px;
+  color: #282828;
+    }
+  };
+  .recommend_type{
+    .yes{
+      color: #219653;
+    }
+    .no{
+      color: #DA3A3A;
+    }
+    .notsure{
+      color:#F2994A; 
+    }
+  }
+  @include respond(mobile){
+    @include flex_position(column,space-between,flex-start);
   }
 }
 }

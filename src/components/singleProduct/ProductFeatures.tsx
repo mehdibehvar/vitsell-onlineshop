@@ -1,5 +1,6 @@
 import React from "react";
 import { FaChevronLeft } from "react-icons/fa";
+import AddToCard from "../common/AddToCard";
 import ColorCheckBox from "../common/button/ColorCheckBox";
 import { LikeShapIcon } from "../icons/icons";
 import KeySpicifications from "./KeySpecifications";
@@ -13,19 +14,22 @@ const ProductFeatures = () => {
         </span>
       </header>
       <div className="likes">
-        <span>۸۲٪ از خریداران خرید این کالا را پیشنهاد کردند!</span>
         <span>
           <LikeShapIcon />
         </span>
+        <span className="pe-2">۸۲٪ از خریداران خرید این کالا را پیشنهاد کردند!</span>
       </div>
-      <div className="coloring d-flex justify-content-between w-100">
+      <div className="coloring  d-flex justify-content-between w-100">
         <span>رنگ بندی:</span>
-        <div className="d-flex justify-content-between">
+        <div className="d-flex justify-content-end">
           <ColorCheckBox className="color_checkbox" color="#C2123C" />
           <ColorCheckBox className="color_checkbox" color="#28B564" />
           <ColorCheckBox className="color_checkbox" color="#2F80ED" />
           <ColorCheckBox className="color_checkbox" color="#F2994A" />
         </div>
+      </div>
+      <div className="float_addtocard d-block d-sm-none position-sticky top-0  w-100">
+     <AddToCard/>
       </div>
      <KeySpicifications hastitle={true}/>
       <div className="description">

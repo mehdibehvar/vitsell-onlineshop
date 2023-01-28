@@ -4,12 +4,13 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import { ProductImageDATA } from "../constant/data";
 import Image from "next/image";
-import { Thumbs } from 'swiper';
+import {  Thumbs } from 'swiper';
 import { FaHeart } from "react-icons/fa";
 import { CommentIcon, ShareIcon, StarIcon } from "../icons/icons";
 import { useState } from "react";
+import { Pagination, Navigation } from "swiper";
 const ProductGallery = () => {
-    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null);
+    const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); 
   return (
     <section className='product_gallery d-flex flex-column justify-content-center align-items-center'>
    <div className="top_section">
@@ -21,7 +22,7 @@ const ProductGallery = () => {
       pagination={{
         clickable: true,
       }}
-      modules={[Thumbs]}
+      modules={[Thumbs,Pagination,Navigation]}
       thumbs={{ swiper: thumbsSwiper }}
     >
       {ProductImageDATA.map((item, index) => (
@@ -59,7 +60,9 @@ const ProductGallery = () => {
       }}
       modules={[Thumbs]}
       watchSlidesProgress
-    //   onSwiper={setThumbsSwiper}
+      // onSwiper={setThumbsSwiper}
+      onSwiper={(swiper)=>console.log(swiper)}
+      
     >
       {ProductImageDATA.map((item, index) => (
           <SwiperSlide key={item.alt}>

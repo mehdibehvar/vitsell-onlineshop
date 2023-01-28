@@ -28,8 +28,8 @@ const DisplayComments = () => {
   return (
   <section>
     <div className='w-100'>
-        <SectionsHeader commentNumber={34} title="نظرات کاربران" icon={<CommentIcon/>}/>
-        <ul className='comments_list mt-2 d-none d-sm-block'>
+        <SectionsHeader showMobIcon={false} commentNumber={34} title="نظرات کاربران" icon={<CommentIcon/>}/>
+        <ul className='comments_list mt-2 d-none d-sm-block w-100 p-0'>
           {commentsData.map((item,index)=> <Commentbox key={index} comment={item}/>)}
           <div className='d-flex justify-content-center align-items-center gap-2'>
             <span>مشاهده نظرات بیشتر</span>

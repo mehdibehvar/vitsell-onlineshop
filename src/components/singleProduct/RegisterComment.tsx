@@ -7,7 +7,7 @@ const RegisterComment = () => {
     <form className="register_comment w-100">
       <div className="title d-flex justify-content-between align-items-center w-100">
         <div className="w-100 regist_title">
-          <SectionsHeader title="ثبت نظر" link="" icon={<CommentIcon />} />
+          <SectionsHeader showMobIcon={false} title="ثبت نظر" link="" icon={<CommentIcon />} />
         </div>
 
     <fieldset className="d-flex justify-content-between w-100">
@@ -30,12 +30,12 @@ const RegisterComment = () => {
     </fieldset>
 
       </div>
-      <div className="comment_text_area">
+      <div className="comment_text_area my-2">
         <textarea className="textarea_comment w-100"  placeholder="لطفا نظر خود را بیان کنید">
 
         </textarea>
       </div>
-      <div className="user_score d-flex justify-content-end gap-3">
+      <div className="user_score d-flex justify-content-end ">
         <div className="stars  d-none d-sm-flex">
              <span className="ms-4">امتیاز شما به این محصول :</span>
           <div className="stars_wrapper">

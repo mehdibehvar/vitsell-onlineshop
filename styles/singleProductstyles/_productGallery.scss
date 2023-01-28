@@ -11,8 +11,14 @@
     border-radius: 16px;
     position: relative;
     width: 448px;
+    .swiper-pagination{
+      display: none;
+    }
     @include respond(mobile){
       width: 380px;
+      .swiper-pagination{
+        display: block;
+      }
     }
       .gallery_wrapper {
     padding: 0;
