@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { useState, useEffect } from "react";
 import ReactDropdown from "../common/domdownmenu/ReactDropdown";
 import ReactMenu from "../common/domdownmenu/ReactMenu";
@@ -18,7 +19,8 @@ const NavRight = () => {
       <div className="d-block d-sm-none">
             <ReactMenu/>
       </div>
-      <div className="logo_wrapper d-none d-sm-block">
+    <Link href="/">
+    <div className="logo_wrapper d-none d-sm-block">
         <Image
           src="/logo.png"
           alt="vitsell"
@@ -26,6 +28,7 @@ const NavRight = () => {
           height={40}
         />
       </div>
+    </Link>
       <div className="nav_menu  d-none d-sm-block">
         <ul className="links_list">
           <li className="category ">

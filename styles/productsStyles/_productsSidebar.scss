@@ -1,7 +1,8 @@
 .products_sidebar {
   @include flex_position(column, flex-start, flex-start);
   gap: 8px;
-  width: 300px;
+  align-content: stretch;
+  min-width: 245px;
   background: #f2f2f2;
   border-radius: 16px;
   padding: 12px;
