@@ -170,3 +170,31 @@ width: 100%!important;
 .mobile_swiper {
   @extend .desktop_swiper;
 }
+///////search component//////////
+.search {
+  position: relative;
+  .search_input {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 12px;
+    gap: 10px;
+    width: 100%;
+    height: 40px;
+    background: #f7f7f7;
+    border-radius: 32px;
+    margin-top: 8px;
+    &::placeholder {
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 19px;
+      color: #7d7d7d;
+    }
+  }
+  .search_button {
+    position: absolute;
+    top: 11px;
+    left: 13px;
+  }
+}

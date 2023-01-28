@@ -91,7 +91,7 @@ useEffect(() => {
           <span>از</span>
           <div>
             <span className="display_value">{minVal}</span>
-            <span>تومان</span>
+            <span className="me-1">تومان</span>
           </div>
         </div>
       </li>
@@ -100,7 +100,7 @@ useEffect(() => {
           <span>تا</span>
           <div>
             <span className="display_value">{maxVal}</span>
-            <span>تومان</span>
+            <span className="me-1">تومان</span>
           </div>
         </div>
       </li>
