@@ -12,6 +12,12 @@
           line-height: 25px;
           color: #c2123c;
         }
-    }
 
+    }
+   @include respond(mobile){
+    padding-right:0px!important;
+    .header_wrapper{
+      padding: 12px 0px;
+    }
+   }
 }

@@ -1,7 +1,7 @@
 import { BuyBasketIcon, LoginIcon} from "../icons/icons";
 import Button from "../common/button/Button";
-import { SlBasket } from 'react-icons/sl';
 import SearchInput from "./SearchInput";
+import Link from "next/link";
 const NavLeft = () => {    
   return (
     <div className="left_section_cta">
@@ -12,9 +12,11 @@ const NavLeft = () => {
         </span>
       </span>
 
-      <Button className="login_button d-none d-sm-block" type="button">
+     <Link href="/login">
+     <Button className="login_button d-none d-sm-block" type="button">
         ورود/ثبت نام
       </Button>
+     </Link>
       <span className=" d-block d-sm-none">
         <LoginIcon />
       </span>

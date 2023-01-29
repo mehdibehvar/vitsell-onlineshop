@@ -1,4 +1,6 @@
 .Login_desktop {
+  overflow: hidden;
+  position:relative;
   .card_wrapper{
     width: 384px;
   }
@@ -32,12 +34,12 @@ height: 430px;
     width: 371px;
     height: 371px;
    right: -185px;
-         top: 410px;
+         top: 420px;
     padding:12px;
     background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='371' ry='371' stroke='%23C2123C70' stroke-width='2' stroke-dasharray='6%25%2c6%25' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
     @include respond(extra){
         right: -158px;
-        top: 470px;
+        top: 480px;
     }
 
   }
