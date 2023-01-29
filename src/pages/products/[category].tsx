@@ -7,7 +7,7 @@ import MobileSlider from "../../components/common/slider/MobileSlider";
 import SortingNavbar from "../../components/common/SortingNavbar";
 import { DISCOUNTIMAGESDATA } from "../../components/constant/imageData";
 import { MagicStarIcon } from "../../components/icons/icons";
-import ProductsLayout from "../../components/layouts/ProductsLayout";
+import FluidLayout from "../../components/layouts/FluidLayout";
 import ProducsBanner from "../../components/producsBanner";
 import ProductsGrid from "../../components/ProductsGrid";
 import ProductsSidebar from "../../components/ProductsSidebar";
@@ -88,6 +88,6 @@ const Products: NextPageWithLayout = () => {
   );
 };
 Products.getLayout = function getLayout(page: ReactElement) {
-  return <ProductsLayout>{page}</ProductsLayout>;
+  return <FluidLayout>{page}</FluidLayout>;
 };
 export default Products;

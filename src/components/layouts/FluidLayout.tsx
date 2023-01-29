@@ -5,7 +5,7 @@ import Navbar from "../navbar/Navbar";
 import Meta from "../Meta";
 import Footer from "../footer/Footer";
 
-const ProductsLayout = ({ children }: { children: ReactNode }) => {
+const FluidLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
       <Meta
@@ -26,4 +26,4 @@ const ProductsLayout = ({ children }: { children: ReactNode }) => {
   );
 };
 
-export default ProductsLayout;
+export default FluidLayout;

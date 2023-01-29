@@ -7,9 +7,9 @@ import {
   FaInstagram,
 } from "react-icons/fa";
 import { BsTelephone } from "react-icons/bs";
-import Card from "../common/Card";
+
 import Image from "next/image";
-import { VitsellLogo } from "../icons/icons";
+
 const Footer = () => {
   return (
     <footer className="footer_section">

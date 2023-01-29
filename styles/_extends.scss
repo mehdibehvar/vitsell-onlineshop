@@ -33,10 +33,31 @@
 .text-gray{
   color:$text-gray-color ;
 }
+.text-gray-2{
+  color: #4F4F4F;
+}
+.text-white{
+  color: $secondary-text-color;
+}
+.text-black-3{
+  color:$text-black-3;
+}
+.bg-main{
+  background-color: $main-bg-color;
+}
+.brand-bg{
+background-color:$brand-primary-color;
+}
+.brand-text{
+  color:$brand-primary-color
+}
 /////font-size///
 .fs-12{
   font-size:$mute-font-size;
 };
 .fs-14{
   font-size: 14px;
+};
+.fs-16{
+  font-size: 16px;
 }

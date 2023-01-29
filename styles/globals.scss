@@ -29,6 +29,7 @@
 @import "./productsStyles/productsPage";
 @import "_horizCard";
 @import "./singleProductstyles/singleProduct";
+@import "./loginStyles/login";
 
 ////font style////////////////
 @font-face {
@@ -41,8 +42,11 @@
 
 body {
   background-color: #ffffff;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 *svg:hover path {
   fill: #f23b51;
+}
+*a:hover{
+  color:$brand-primary-color;
 }

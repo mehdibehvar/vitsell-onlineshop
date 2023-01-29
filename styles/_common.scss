@@ -198,3 +198,78 @@ width: 100%!important;
     left: 13px;
   }
 }
+.common_input{
+  input{
+    height: 48px;
+background: #F7F7F7;
+border-radius: 32px;
+padding: 12px;
+width: 100%;
+  };
+  .icon{
+    right: 11px;
+    top: 46px;
+  }
+}
+.phone_number{
+  input{
+    direction: ltr;
+  }
+}
+////////////////login card///////
+.login_card {
+  padding: 32px 24px;
+ margin-right: 120px;
+  width: 100%;
+@include respond(mobile){
+  margin-right: 0;
+};
+  box-shadow: 0px 0px 80px rgba(204, 188, 190, 0.25);
+  border-radius: 24px;
+  .title{
+      font-weight: 900;
+font-size: 24px;
+line-height: 38px;
+color: #C2123C;
+  }
+  .login_form_button{
+      background-color: $brand-primary-color;
+      padding: 8px 24px;
+
+height: 48px;
+border-radius: 24px;
+  };
+  .input_approve_code{
+    height: 48px;
+    top:25px;
+   right: 0;
+   z-index: 2;
+    direction: ltr;
+    letter-spacing: 3rem;
+    padding-left: 22px;
+  };
+
+};
+.code_input{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 12px;
+width: 49.33px;
+height: 48px;
+background: #F7F7F7;
+border-radius: 32px;
+position: relative;
+&::before{
+  content: "";
+     width: 17px;
+     
+     height: 1px;
+     position: absolute;
+     top: 40px;
+     left: 17px;
+     border-bottom: 1px solid #BDBDBD;
+
+}
+}
