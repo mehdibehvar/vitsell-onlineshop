@@ -71,9 +71,9 @@ const AboutUs = () => {
   return (
     <>
       <section className="aboutUs_layout  d-flex flex-column align-items-center ">
-        <section className=" about_us">
+        <section className=" about_us w-100">
           <Navbar />
-          <main className="bg-main main_section mt-3 mb-2">
+          <main className="bg-main main_section mt-3 mb-2 w-100">
             <section className="top_section">
               <div className="description">
                 <h1 className="fs-24 text-h-color fw-bolder mb-3">

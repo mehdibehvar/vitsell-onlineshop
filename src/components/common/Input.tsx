@@ -1,8 +1,8 @@
 import React from 'react'
 interface IProps{
-    placeholder:string,
+    placeholder?:string,
     label:string,
-    className:string,
+    className?:string,
     icon?:JSX.Element
 }
 const Input = ({placeholder,label,className,icon}:IProps) => {
