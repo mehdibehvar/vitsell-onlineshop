@@ -9,21 +9,23 @@ import {
 import { BsTelephone } from "react-icons/bs";
 
 import Image from "next/image";
+import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="footer_section">
-      <Row>
+    <footer className="footer_section pt-lg-5">
+
+     <Row>
         <Col xs="12" sm="10">
           <Row>
             <Col className="d-none d-sm-block" sm="3">
               <article className="first">
                 <div className="footer_logo">
                   <Image
-                  src="/logo1.png"
-                  alt="vitsell"
-                  width={112}
-                  height={112}
+                    src="/logo1.png"
+                    alt="vitsell"
+                    width={112}
+                    height={112}
                   />
                 </div>
                 <div>
@@ -41,10 +43,18 @@ const Footer = () => {
               <article className="second">
                 <h4>با ویتسل</h4>
                 <ul>
-                  <li>درباره ما</li>
-                  <li>تماس با ما</li>
-                  <li>حریم خصوصی</li>
-                  <li>شرایط بازگشت کالا</li>
+                  <Link href="/aboutus">
+                    <li>درباره ما</li>
+                  </Link>
+                  <Link href="/contactus">
+                    <li>تماس با ما</li>
+                  </Link>
+                  <Link href="/privacy">
+                    <li>حریم خصوصی</li>
+                  </Link>
+                  <Link href="/">
+                    <li>شرایط بازگشت کالا</li>
+                  </Link>
                 </ul>
               </article>
             </Col>
@@ -115,6 +125,7 @@ const Footer = () => {
           </div>
         </Col>
       </Row>
+    
     </footer>
   );
 };

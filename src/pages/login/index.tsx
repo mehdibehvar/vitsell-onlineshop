@@ -14,8 +14,8 @@ const Login = () => {
     <div className="card_wrapper">
     <LoginCard/>
     </div>
-     <DashedCircle className="big_dashed_border"/>
-     <DashedCircle className="litle_dashed_border"/>
+     <DashedCircle className="big_dashed_border" imageSrc="/assets/images/loginphoto.png"/>
+     <DashedCircle className="litle_dashed_border" imageSrc=""/>
     </section>
 
 <section className="d-block d-sm-none">
