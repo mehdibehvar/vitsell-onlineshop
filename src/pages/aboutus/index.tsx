@@ -38,7 +38,7 @@ const AboutusIcons = {
   bagcross: <BagCrossIcon />,
   headphone: <HeadphoneIcon />,
   payment: <DiscountIcon />,
-  easybuy: <ShopingCardIcon/>,
+  easybuy: <ShopingCardIcon />,
 };
 const AboutUsData = [
   {
@@ -75,7 +75,8 @@ const AboutUs = () => {
           <Navbar />
           <main className="bg-main main_section mt-3 mb-2 w-100">
             <section className="top_section">
-              <div className="description">
+             <div className="d-flex">
+             <div className="description">
                 <h1 className="fs-24 text-h-color fw-bolder mb-3">
                   درباره ویتسل
                 </h1>
@@ -98,41 +99,48 @@ const AboutUs = () => {
                   نا‏کارآمد زندگی، هوشمندانه‏‌تر و امروزی‏‌تر زندگی کنند.{" "}
                 </p>
               </div>
-            <div className="position-relative w-100 fixed_height">
-              
-            <div className="small_cards_wrapper d-flex flex-wrap ">
-                {cardsData.map((item, index) => (
-                  <div
-                    key={index}
-                    className="small_card d-flex flex-column align-items-center justify-content-center gap-2"
-                  >
-                    <div className="image_wrapper position-relative">
-                      <Image src={`${item.src}`} fill alt="discount" />
+              <AboutusDashed />
+              <div className="image_wrapper d-none d-sm-flex  position-relative w-100 h-100  justify-content-end align-items-center">
+            <Image src="/assets/images/aboutbg.png" width={442} height={372} alt="vitsell-login" />
+          </div>
+             </div>
+         
+              <div className="position-relative w-100 fixed_height">
+                <div className="small_cards_wrapper d-flex flex-wrap ">
+                  {cardsData.map((item, index) => (
+                    <div
+                      key={index}
+                      className="small_card d-flex flex-column align-items-center justify-content-center gap-2"
+                    >
+                      <div className="image_wrapper position-relative">
+                        <Image src={`${item.src}`} fill alt="discount" />
+                      </div>
+                      <span className="fs-14 fw-bold text-black-3">
+                        {item.title}
+                      </span>
                     </div>
-                    <span className="fs-14 fw-bold text-black-3">
-                      {item.title}
-                    </span>
-                  </div>
-                ))}
+                  ))}
+                </div>
               </div>
-            </div>
-          
+             
             </section>
-            <AboutusDashed />
+           
             <section className="section_two d-flex flex-column align-items-stretch">
               {AboutUsData.map((item, index) => (
                 <div key={index}>
-                  <SectionsHeader showMobIcon={true} icon={item.icon} title={item.title} />
+                  <SectionsHeader
+                    showMobIcon={true}
+                    icon={item.icon}
+                    title={item.title}
+                  />
                   <p className="text-gray-2 fs-14 mt-3">{item.text}</p>
                 </div>
               ))}
             </section>
           </main>
- 
-
         </section>
-          <Footer />
-      </section> 
+        <Footer />
+      </section>
     </>
   );
 };
