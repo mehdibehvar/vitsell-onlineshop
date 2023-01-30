@@ -219,7 +219,8 @@ width: 100%;
 ////////////////login card///////
 .login_card {
   padding: 32px 24px;
- margin-right: 120px;
+//  margin-right: 30px;
+ margin-bottom: 27px;
   width: 100%;
 @include respond(mobile){
   margin-right: 0;
@@ -274,41 +275,54 @@ position: relative;
 }
 //////////////////dashed circle//////////
 .big_dashed_border{
-  position: absolute;
-width: 900px;
-height: 900px;
-right: 572px;
-top: -200px;
-padding: 34px;
-
-@include respond(extra){
+position: absolute;
 width: 991px;
 height: 991px;
-}
+left: -123px;
+top: -145px;
 border-radius: 50%;
 background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='991' ry='991' stroke='%23C2123C70' stroke-width='2' stroke-dasharray='2%25%2c 2%25' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
-
+@include respond(laptop){
+  left: -223px;
+}
+}
 .inner{
-background: #FFFFFF;
-box-shadow: 0px 0px 80px rgba(204, 188, 190, 0.25);
-border-radius: 50%;
-.image_wrapper{
-  width: 467px;
-height: 430px;
-}
-}
-}
+  background: #FFFFFF;
+  box-shadow: 0px 0px 80px rgba(204, 188, 190, 0.25);
+  border-radius: 50%;
+  position: absolute;
+  width: 922.45px;
+  height: 922.45px;
+  left: -88.72px;
+  top: -110.72px;
+  @include respond(laptop){
+    left: -188.72px;
+  }
+  }
 .litle_dashed_border{
-  @extend .big_dashed_border;
+  position: absolute;
   width: 371px;
   height: 371px;
- right: -185px;
-       top: 420px;
-  padding:12px;
+  left: 1218px;
+  top: 470px;
   background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='371' ry='371' stroke='%23C2123C70' stroke-width='2' stroke-dasharray='6%25%2c6%25' stroke-dashoffset='100' stroke-linecap='butt'/%3e%3c/svg%3e");
-  @include respond(extra){
-      right: -158px;
-      top: 480px;
+  @include respond(laptop){
+    top: 435px;
+    left: 1095px;
+
   }
 
+}
+.little_inner{
+  position: absolute;
+width: 345.34px;
+height: 345.34px;
+left: 1230.83px;
+top: 479.83px;
+background:  #FFFFFF;
+border-radius: 50%;
+@include respond(laptop){
+  top: 445px;
+  left: 1105px;
+}
 }
