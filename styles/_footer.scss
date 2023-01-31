@@ -1,5 +1,6 @@
 .footer_section {
-    // margin-top: 64px;
+    // background-color: $main-bg-color;
+
   .first {
     @include flex_position(column, flex-start, flex-start);
     padding: 0px;

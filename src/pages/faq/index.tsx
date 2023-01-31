@@ -18,6 +18,7 @@ const qData = [
 ];
 const FaqPage = () => {
   return (
+ <>
     <section className="faq_layout  d-flex flex-column align-items-center ">
       <section className="faq w-100">
         <Navbar />
@@ -87,8 +88,12 @@ const FaqPage = () => {
           </section>
         </main>
       </section>
-      <Footer />
+
     </section>
+        <section className="privacy_footer_wrapper">
+        <Footer />
+        </section>
+ </>
   );
 };
 

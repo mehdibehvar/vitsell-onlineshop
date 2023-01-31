@@ -14,7 +14,6 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <footer className="footer_section pt-lg-5">
-
      <Row>
         <Col xs="12" sm="10">
           <Row>

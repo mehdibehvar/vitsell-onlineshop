@@ -1,0 +1,84 @@
+.privacy_layout {
+    padding: 32px 120px;
+    padding-bottom: 0;
+    background-color: #FFFFFF;
+    @include respond(mobile) {
+      padding: 0px 16px;
+      background-color: #ffffff;
+    };
+    .main_section {
+        padding: 32px;
+        gap: 16px;
+        background: #ffffff;
+        border-radius: 24px;
+        overflow: hidden;
+        filter: drop-shadow(0px 0px 80px rgba(204, 188, 190, 0.25));
+        @include respond(mobile) {
+          padding:0;
+          flex-direction: column;
+          filter: none;
+        }
+        .privacy_list{
+            font-size: 9px;
+            li{
+                list-style-type: disc;
+                // list-style-position: inside;
+                color: $text-gray-color;
+                p{
+                    text-align: justify
+                }
+            }
+           }
+
+    };
+    .aboutus_dashed_border {
+        position: absolute;
+        width: 767px;
+        height: 767px;
+        left: -167px;
+        top: -149px;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke='%23C2123C2B' stroke-width='2' stroke-dasharray='33%2c 28' stroke-dashoffset='5' stroke-linecap='square'/%3e%3c/svg%3e");
+      
+      .clean_border{
+        top: 3px;
+        left: -4px;
+      }
+      };
+      .inner {
+        position: absolute;
+        background: #ffffff;
+        box-shadow: 0px 0px 80px rgba(204, 188, 190, 0.25);
+        border-radius: 50%;
+        width: 713.94px;
+      height: 713.94px;
+      left: -140.47px;
+      top: -122.47px;
+      }
+      .first_circle {
+        position: absolute;
+      width: 641px;
+      height: 641px;
+      left: -104px;
+      top: -86px;
+        border-radius: 50%;
+        background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='700' ry='700' stroke='%23C2123C4D' stroke-width='2' stroke-dasharray='30%2c 20' stroke-dashoffset='36' stroke-linecap='square'/%3e%3c/svg%3e");
+      }
+      .clean_border{
+      border-radius: 50%;
+      top: 36px;
+      left: -10px;
+      background-color: #FFFFFF;
+      };
+
+}
+.privacy_footer_wrapper{
+    padding-left: 120px;
+    padding-right: 120px;
+    filter: drop-shadow(0px 0px 80px rgba(204, 188, 190, 0.25));
+    background-color: $main-bg-color;
+    @include respond(mobile){
+        padding: 0px 16px;
+        filter: none;
+    }
+  }

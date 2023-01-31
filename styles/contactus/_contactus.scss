@@ -1,6 +1,7 @@
 .contact_us_layout {
   padding: 32px 120px;
-  background-color: #f7f7f7;
+  padding-bottom: 0;
+  background-color: #FFFFFF;
   @include respond(mobile) {
     padding: 0px 16px;
     background-color: #ffffff;
@@ -10,10 +11,12 @@
     gap: 32px;
     background: #ffffff;
     border-radius: 24px;
+    filter: drop-shadow(0px 0px 80px rgba(204, 188, 190, 0.25));
     @include respond(mobile) {
       padding:0;
       flex-direction: column;
       gap: 24px;
+      filter: none;
     }
     .right {
       .social {
@@ -59,4 +62,14 @@
   height: 86px;
   background: #f7f7f7;
   border-radius: 16px;
+}
+.contact_us_footer_wrapper{
+  padding-left: 120px;
+  padding-right: 120px;
+  filter: drop-shadow(0px 0px 80px rgba(204, 188, 190, 0.25));
+  background-color: $main-bg-color;
+  @include respond(mobile){
+      padding: 0px 16px;
+      filter: none;
+  }
 }

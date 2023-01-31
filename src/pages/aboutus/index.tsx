@@ -75,36 +75,41 @@ const AboutUs = () => {
           <Navbar />
           <main className="bg-main main_section mt-3 mb-2 w-100">
             <section className="top_section">
-             <div className="d-flex">
-             <div className="description">
-                <h1 className="fs-24 text-h-color fw-bolder mb-3">
-                  درباره ویتسل
-                </h1>
-                <p className="fs-14 fw-light text-gray-2">
-                  توسعه اینترنت روش‌های خرید ما را به کلی دگرگون کرده است. منافع
-                  موجود در خرید اینترنتی هر روز تعداد بیشتری از مردم را به تجربه
-                  آن و ایجاد تغییر در الگوهای متداول خرید ترغیب می‏‌کند. امروز
-                  دیگر افراد این روش خرید را بیشتر منطبق بر شرایط زندگی مدرن
-                  می‏‏‏‌بینند. ویژگی‏‏‏‌ها و طبیعت خرید اینترنتی با روحیات و
-                  نیازهای رو به رشد ما هماهنگ شده است.
-                  <br />
-                  <br />
-                  همه سخت در حال تلاش برای پیشرفت‏‏‌های شخصی و جمعی خود هستیم.
-                  امروزه بهای اوقات فراغت ما با وجود مشغله‏‌های روزانه بسیار
-                  گرانبها‌تر شده است. همه ما برای این اوقات برنامه ریزی
-                  فشرده‏‌تری داریم. دیگر صرف زمان‌هایی نسبتا طولانی در
-                  فعالیت‏‌های نه‌چندان با اهمیت مانند خرید و سفرهای شهری برای
-                  بسیاری از انسان‌ها اولویت خود را از دست داده است. هوشمندی
-                  انسان‌ها، آنها را مجاب می‏‌کند که با تغییر در الگوهای قدیمی و
-                  نا‏کارآمد زندگی، هوشمندانه‏‌تر و امروزی‏‌تر زندگی کنند.{" "}
-                </p>
+              <div className="d-flex">
+                <div className="description">
+                  <h1 className="fs-24 text-h-color fw-bolder mb-3">
+                    درباره ویتسل
+                  </h1>
+                  <p className="fs-14 fw-light text-gray-2">
+                    توسعه اینترنت روش‌های خرید ما را به کلی دگرگون کرده است.
+                    منافع موجود در خرید اینترنتی هر روز تعداد بیشتری از مردم را
+                    به تجربه آن و ایجاد تغییر در الگوهای متداول خرید ترغیب
+                    می‏‌کند. امروز دیگر افراد این روش خرید را بیشتر منطبق بر
+                    شرایط زندگی مدرن می‏‏‏‌بینند. ویژگی‏‏‏‌ها و طبیعت خرید
+                    اینترنتی با روحیات و نیازهای رو به رشد ما هماهنگ شده است.
+                    <br />
+                    <br />
+                    همه سخت در حال تلاش برای پیشرفت‏‏‌های شخصی و جمعی خود هستیم.
+                    امروزه بهای اوقات فراغت ما با وجود مشغله‏‌های روزانه بسیار
+                    گرانبها‌تر شده است. همه ما برای این اوقات برنامه ریزی
+                    فشرده‏‌تری داریم. دیگر صرف زمان‌هایی نسبتا طولانی در
+                    فعالیت‏‌های نه‌چندان با اهمیت مانند خرید و سفرهای شهری برای
+                    بسیاری از انسان‌ها اولویت خود را از دست داده است. هوشمندی
+                    انسان‌ها، آنها را مجاب می‏‌کند که با تغییر در الگوهای قدیمی
+                    و نا‏کارآمد زندگی، هوشمندانه‏‌تر و امروزی‏‌تر زندگی کنند.{" "}
+                  </p>
+                </div>
+                <AboutusDashed />
+                <div className="image_wrapper d-none d-sm-flex  position-relative w-100 h-100  justify-content-end align-items-center">
+                  <Image
+                    src="/assets/images/aboutbg.png"
+                    width={442}
+                    height={372}
+                    alt="vitsell-login"
+                  />
+                </div>
               </div>
-              <AboutusDashed />
-              <div className="image_wrapper d-none d-sm-flex  position-relative w-100 h-100  justify-content-end align-items-center">
-            <Image src="/assets/images/aboutbg.png" width={442} height={372} alt="vitsell-login" />
-          </div>
-             </div>
-         
+
               <div className="position-relative w-100 fixed_height">
                 <div className="small_cards_wrapper d-flex flex-wrap ">
                   {cardsData.map((item, index) => (
@@ -122,9 +127,8 @@ const AboutUs = () => {
                   ))}
                 </div>
               </div>
-             
             </section>
-           
+
             <section className="section_two d-flex flex-column align-items-stretch">
               {AboutUsData.map((item, index) => (
                 <div key={index}>
@@ -139,8 +143,11 @@ const AboutUs = () => {
             </section>
           </main>
         </section>
-        <Footer />
+
       </section>
+      <section className="aboutUs_footer_wrapper">
+     <Footer />
+     </section>
     </>
   );
 };

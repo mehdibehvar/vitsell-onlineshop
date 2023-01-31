@@ -16,7 +16,7 @@ import Navbar from "../../components/navbar/Navbar";
 const ContactUs = () => {
   return (
 <>
-<section className="contact_us_layout  d-flex flex-column align-items-center ">
+   <section className="contact_us_layout  d-flex flex-column align-items-center ">
       <section className="contact_us w-100">
         <Navbar />
         <main className="main_section d-flex mt-4 mt-lg-3 mb-4 mb-lg-2">
@@ -85,8 +85,10 @@ const ContactUs = () => {
           </div>
         </main>
       </section>
-      <Footer />
     </section>
+    <section className="contact_us_footer_wrapper">
+     <Footer />
+     </section>
 </>
   );
 };
