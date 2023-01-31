@@ -39,9 +39,9 @@ const MostProductInfo = () => {
               <DisplayComments />
             </section>
 
-            <section className="similar_products_section w-100">
+            <section className="similar_products_section  d-flex flex-column ">
               <SectionsHeader title="محصولات مشابه" icon={<SimilarIcon />} />
-              <div className="product_desktop_slider_wrapper d-none d-sm-block mt-3">
+              <div className="product_desktop_slider_wrapper d-none d-sm-block mt-3 ">
                 <DesktopSlider
                   IMAGESDATA={DISCOUNTIMAGESDATA}
                   hasDetails={true}

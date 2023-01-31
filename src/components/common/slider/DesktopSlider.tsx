@@ -20,7 +20,7 @@ interface IProps {
 const DesktopSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) => {
 
   return (
-    <div  className="desktop_swiper  w-100">
+    <div  className="desktop_swiper">
       <Swiper
         className="swiper"
         navigation={true}
@@ -38,7 +38,7 @@ const DesktopSlider = ({ IMAGESDATA,InfoClass, hasDetails,priority }: IProps) =>
               <Image
                 src={`${item.url}`}
                 alt={`${item.alt}`}
-                fill
+             fill
                 priority={priority}
               />
             </div>

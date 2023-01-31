@@ -46,16 +46,16 @@
           }
         }
       }
-    };
+    }
     ////speci section///
     .product_specifics_section {
       .article_specifications {
         div.speci_wrapper {
           .indent {
             padding-right: 44px;
-            @include respond(mobile){
-            padding-right: 8px ;
-          }
+            @include respond(mobile) {
+              padding-right: 8px;
+            }
           }
         }
       }
@@ -63,16 +63,13 @@
     /////similar-producs-section///
     .similar_products_section {
       .product_desktop_slider_wrapper {
-        @include respond(laptop){
-          max-width:910px !important;
+        width:1022px!important;
+      @include respond(laptop){
+        width:890px!important;
       }
-      @include respond(extra){
-          max-width:1050px !important;
-      }
-      
       }
       .product_mobile_slider_wrapper {
-        width: 382px!important;
+        width: 382px !important;
       }
     }
   }

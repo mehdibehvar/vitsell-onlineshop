@@ -9,8 +9,14 @@ import { FaHeart } from "react-icons/fa";
 import { CommentIcon, ShareIcon, StarIcon } from "../icons/icons";
 import { useState } from "react";
 import { Pagination, Navigation } from "swiper";
+import VitsellModal from "../common/Modal";
 const ProductGallery = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); 
+    const [showModal, setShowModal] = useState<boolean>(false);
+    const handleShowModal=()=>{
+      setShowModal(true);
+    };
+
   return (
     <section className='product_gallery d-flex flex-column justify-content-center align-items-center'>
    <div className="top_section">
@@ -50,7 +56,7 @@ const ProductGallery = () => {
    </div>
   
       <div className="thumb_wrapper d-none d-sm-block ">
-            {/* /////////////////// */}
+       
       <Swiper
       navigation={true}
       slidesPerView={5}
@@ -60,8 +66,7 @@ const ProductGallery = () => {
       }}
       modules={[Thumbs]}
       watchSlidesProgress
-      // onSwiper={setThumbsSwiper}
-      // onSwiper={(swiper)=>console.log(swiper)}
+      onClick={(swiper)=>setThumbsSwiper(swiper)}
       
     >
       {ProductImageDATA.map((item, index) => (
@@ -76,10 +81,16 @@ const ProductGallery = () => {
           </SwiperSlide>
         ))}
       </Swiper>
-      <div className="active_thumb">
-        <div className="blur"></div>
+      <div onClick={handleShowModal} className="active_thumb">
+        <div className="dots d-flex w-100 h-100 align-items-center justify-content-center">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
       </div>
+      <div onClick={()=>setShowModal(false)} className={`product_gallery_modal ${showModal?"show_modal":""}`}>click on modal to close it</div>
+      {/* <VitsellModal setonclose={setShowModal} showmodal={showModal}/> */}
     </section>
   )
 }

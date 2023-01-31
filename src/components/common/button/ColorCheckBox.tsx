@@ -7,7 +7,7 @@ const ColorCheckBox = ({className,color}:{color:string,className:string}) => {
         setCheck((prev)=>!prev) 
     }
   return (
-    <div onClick={handleChecked} className={`${className} ${check?"isChecked":""}`} style={{background:`${color}`,boxShadow:`${check?`0px 0px 4px 1px ${color}`:""}`}}>
+    <div onClick={handleChecked} className={`${className} ${check?"isChecked":""}`} style={{backgroundColor:`${color}`,boxShadow:`${check?`0px 0px 4px 1px ${color}`:""}`}}>
     <input type="checkbox" checked={check} />
     <span className="checkmark"><TickCircleIcon/></span>
   </div>
