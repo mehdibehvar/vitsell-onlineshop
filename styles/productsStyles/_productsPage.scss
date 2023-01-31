@@ -8,11 +8,9 @@
     gap: 16px;
     .products_slider.best_sell{
         .desktop_slider_wrapper{
+            width:1100px;
         @include respond(laptop){
-            max-width:950px !important;
-        }
-        @include respond(extra){
-            max-width:1100px !important;
+         width:950px;
         }
         }
         .mobile_slider_wrapper{

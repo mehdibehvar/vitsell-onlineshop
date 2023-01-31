@@ -89,8 +89,8 @@ const ProductGallery = () => {
         </div>
       </div>
       </div>
-      <div onClick={()=>setShowModal(false)} className={`product_gallery_modal ${showModal?"show_modal":""}`}>click on modal to close it</div>
-      {/* <VitsellModal setonclose={setShowModal} showmodal={showModal}/> */}
+      {/* <div onClick={()=>setShowModal(false)} className={`product_gallery_modal ${showModal?"show_modal":""}`}>click on modal to close it</div> */}
+      <VitsellModal setShowModal={setShowModal} showmodal={showModal}/>
     </section>
   )
 }

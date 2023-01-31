@@ -1,21 +1,14 @@
-import React, { useState } from 'react';
-import { Button, Modal, ModalHeader, ModalBody, ModalFooter } from 'reactstrap';
+
+import {  Modal, ModalBody} from 'reactstrap';
 interface IProps{
-    setonclose:any,
+    setShowModal:(input:boolean)=>void,
     showmodal:boolean
 }
-function VitsellModal({showmodal,setonclose}:IProps) {
-  const [modal, setModal] = useState(false);
-
-  const toggle = () => setModal(!modal);
-
+function VitsellModal({showmodal,setShowModal}:IProps) {
   return (
     <div>
-      {/* <Button color="danger" onClick={toggle}>
-        Click Me
-      </Button> */}
-      <Modal isOpen={showmodal} toggle={toggle}>
-        <ModalHeader >Modal title</ModalHeader>
+      <Modal isOpen={showmodal}>
+        <button onClick={()=>setShowModal(false)}>close</button>
         <ModalBody>
           Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,14 +18,6 @@ function VitsellModal({showmodal,setonclose}:IProps) {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </ModalBody>
-        <ModalFooter>
-          <Button color="primary" onClick={toggle}>
-            Do Something
-          </Button>{' '}
-          <Button color="secondary" onClick={toggle}>
-            Cancel
-          </Button>
-        </ModalFooter>
       </Modal>
     </div>
   );
