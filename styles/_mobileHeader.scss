@@ -17,7 +17,8 @@
    @include respond(mobile){
     padding-right:0px!important;
     .header_wrapper{
-      padding: 12px 0px;
+      padding: 12px 0;
+  
     }
    }
 }

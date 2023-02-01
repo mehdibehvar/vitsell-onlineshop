@@ -123,7 +123,7 @@ export const AMAZINGDATA:Iimagedata[]=[
 ];
 export const ProductImageDATA:Iimagedata[]=[
   {
-      url:"/assets/images/image 35.png",
+      url:"/assets/images/Map.png",
       alt:"slide1",
       price:"۴,۳۴۳,۰۰۰",
       discount:"۴,۳۴۳,۰۰۰",

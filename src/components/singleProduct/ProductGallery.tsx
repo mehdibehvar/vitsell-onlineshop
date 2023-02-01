@@ -2,14 +2,16 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
+import { Pagination, Navigation } from "swiper";
+import {  Thumbs } from 'swiper';
 import { ProductImageDATA } from "../constant/data";
 import Image from "next/image";
-import {  Thumbs } from 'swiper';
+
 import { FaHeart } from "react-icons/fa";
 import { CommentIcon, ShareIcon, StarIcon } from "../icons/icons";
 import { useState } from "react";
-import { Pagination, Navigation } from "swiper";
-import VitsellModal from "../common/Modal";
+import ProductPicsModal from "./ProductPicsModal";
+
 const ProductGallery = () => {
     const [thumbsSwiper, setThumbsSwiper] = useState<any>(null); 
     const [showModal, setShowModal] = useState<boolean>(false);
@@ -89,8 +91,7 @@ const ProductGallery = () => {
         </div>
       </div>
       </div>
-      {/* <div onClick={()=>setShowModal(false)} className={`product_gallery_modal ${showModal?"show_modal":""}`}>click on modal to close it</div> */}
-      <VitsellModal setShowModal={setShowModal} showmodal={showModal}/>
+      <ProductPicsModal ProductImageDATA={ProductImageDATA} setShowModal={setShowModal} showmodal={showModal}/>
     </section>
   )
 }

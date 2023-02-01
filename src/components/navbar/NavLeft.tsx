@@ -12,17 +12,21 @@ const NavLeft = () => {
         </span>
       </span>
 
-     <Link href="/login">
+     <Link href="/login" className="d-none d-sm-block">
      <Button className="login_button d-none d-sm-block" type="button">
         ورود/ثبت نام
       </Button>
      </Link>
-      <span className=" d-block d-sm-none">
-        <LoginIcon />
-      </span>
-      <span className="d-block d-sm-none">
+     <span className="d-block d-sm-none p-2">
         <BuyBasketIcon />
       </span>
+      <span className=" d-block d-sm-none p-2">
+        <Link href="/login">
+        <LoginIcon />
+
+        </Link>
+      </span>
+   
     </div>
   );
 };

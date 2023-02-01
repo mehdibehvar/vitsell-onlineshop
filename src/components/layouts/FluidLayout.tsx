@@ -14,7 +14,7 @@ const FluidLayout = ({ children }: { children: ReactNode }) => {
         description="خرید ارزان و با کیفیت"
       /> 
       <Container fluid className="products_layout">
-        <Row className="m-0">
+        <Row >
           <Navbar/>
         </Row>
         {children}

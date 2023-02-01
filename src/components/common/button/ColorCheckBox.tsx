@@ -1,14 +1,16 @@
 import  { useState } from 'react'
 import { TickCircleIcon} from '../../icons/icons';
 
-const ColorCheckBox = ({className,color}:{color:string,className:string}) => {
+const ColorCheckBox = ({className}:{className:string}) => {
     const [check, setCheck] = useState(false);
-    const handleChecked=()=>{
+    const handleChecked=()=>{ 
         setCheck((prev)=>!prev) 
     }
+
+    
   return (
-    <div onClick={handleChecked} className={`${className} ${check?"isChecked":""}`} style={{backgroundColor:`${color}`,boxShadow:`${check?`0px 0px 4px 1px ${color}`:""}`}}>
-    <input type="checkbox" checked={check} />
+    <div onClick={handleChecked}  className={`color_checkbox ${className} ${check?"isChecked":""}`}>
+    <input   type="checkbox" checked={check} />
     <span className="checkmark"><TickCircleIcon/></span>
   </div>
   )

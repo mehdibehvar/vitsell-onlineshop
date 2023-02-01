@@ -22,10 +22,10 @@ const ProductFeatures = () => {
       <div className="coloring  d-flex justify-content-between w-100">
         <span>رنگ بندی:</span>
         <div className="d-flex justify-content-end">
-          <ColorCheckBox className="color_checkbox" color="#C2123C" />
-          <ColorCheckBox className="color_checkbox" color="#28B564" />
-          <ColorCheckBox className="color_checkbox" color="#2F80ED" />
-          <ColorCheckBox className="color_checkbox" color="#F2994A" />
+          <ColorCheckBox className="red" />
+          <ColorCheckBox className="green"/>
+          <ColorCheckBox className="blue"  />
+          <ColorCheckBox className="yellow" />
         </div>
       </div>
       <div className="float_addtocard d-block d-sm-none position-sticky top-0  w-100">

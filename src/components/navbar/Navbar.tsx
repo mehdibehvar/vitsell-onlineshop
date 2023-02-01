@@ -7,8 +7,8 @@ import { Col } from "reactstrap";
 const Navbar = () => {
   return (
     <>
-    <MobileHeader />
-   <Col className="px-0">
+  <Col sm="12">  <MobileHeader /></Col>
+   <Col>
      <nav className="navbar">
      <NavRight/>
      <NavLeft/>

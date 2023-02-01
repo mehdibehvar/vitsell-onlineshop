@@ -57,7 +57,7 @@ color: #333333;
 //////check/////////////////////
 .color_checkbox {
   width: 32px;
-  height: 32px;
+  height: 32px; 
   border-radius: 20px;
   position: relative;
   margin-left: 12px;
@@ -78,6 +78,7 @@ color: #333333;
 
   }
 }
+
 .key_properties {
   gap: 9px;
   h5 {
@@ -112,5 +113,33 @@ color: #333333;
 .coloring{
   @include respond(mobile){
     flex-direction: column;
+  }
+  .red{
+    background-color:#C2123C ;
+  };
+  .red.isChecked{
+    box-shadow:0px 0px 4px 1px #C2123C;
+  }
+  .green{
+    background-color:#28B564;
+  }
+  .green.isChecked{
+    box-shadow:0px 0px 4px 1px #28B564;
+  }
+  .blue{
+    background-color:#2F80ED;
+
+  }
+  .blue.isChecked{
+    box-shadow:0px 0px 4px 1px #2F80ED;
+
+  }
+  .yellow{
+    background-color:#F2994A;
+
+  }
+  .yellow.isChecked{
+    box-shadow:0px 0px 4px 1px #F2994A;
+
   }
 }
