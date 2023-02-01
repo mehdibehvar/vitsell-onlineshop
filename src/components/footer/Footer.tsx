@@ -1,4 +1,3 @@
-import React from "react";
 import { Col, Row } from "reactstrap";
 import {
   FaTelegramPlane,
@@ -10,11 +9,13 @@ import { BsTelephone } from "react-icons/bs";
 
 import Image from "next/image";
 import Link from "next/link";
+import Button from "../common/button/Button";
+import { InstaIcon, MapIcon, PhoneIcon, TelegramIcon, WhatsAppIcon } from "../icons/icons";
 
 const Footer = () => {
   return (
     <footer className="footer_section pt-lg-5">
-     <Row>
+      <Row>
         <Col xs="12" sm="10">
           <Row>
             <Col className="d-none d-sm-block" sm="3">
@@ -74,30 +75,53 @@ const Footer = () => {
                 <h4>ارتباط با ویتسل</h4>
                 <ul>
                   <li>
-                    <FaTelegramPlane />
+                    <span className="telegram"><TelegramIcon/></span>
                     ٰvitdell@gmail.com
                   </li>
                   <li>
-                    <BsTelephone />
+                    <PhoneIcon/>
                     ۰۸۴۷۷۴۷۳۲۲
                   </li>
                   <li>
-                    <FaMap />
+                    <MapIcon/>
                     خیابان ولی عصرنرسیده به سینما آفریقا
                   </li>
                   <li>
                     <span>
-                      <FaWhatsapp />
+                      <InstaIcon />
                     </span>
                     <span>
-                      <FaTelegramPlane />
+                      <TelegramIcon/>
                     </span>
                     <span>
-                      <FaInstagram />
+                      <WhatsAppIcon/>
                     </span>
                   </li>
                 </ul>
               </article>
+            </Col>
+          </Row>
+          <Row className="d-none d-sm-block">
+            <Col>
+              <section className="newsletter d-flex justify-content-between align-items-center gap-4">
+                <div className="w-100">
+                  <p className="fs-12 fw-400 text-gray p-0 m-0">
+                    برای اطلاع از اخرین تخفیف های ما با ما در ارتباط باشید.
+                  </p>
+                </div>
+                <form className="position-relative w-100">
+                  <input
+                    placeholder="آدرس ایمیل"
+                    className="w-100 h-40 fs-12 bg-gray"
+                  />
+                  <Button
+                    className="position-absolute fs-14 top-0 h-38 round-24 py-2 px-3 text-white left-0  brand-bg"
+                    type="submit"
+                  >
+                    دریافت خبرنامه
+                  </Button>
+                </form>
+              </section>
             </Col>
           </Row>
         </Col>
@@ -124,7 +148,6 @@ const Footer = () => {
           </div>
         </Col>
       </Row>
-    
     </footer>
   );
 };

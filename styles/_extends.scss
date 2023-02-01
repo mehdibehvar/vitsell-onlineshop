@@ -57,7 +57,9 @@ color: #282828;
 .brand-bg{
 background-color:$brand-primary-color;
 }
-
+.bg-gray{
+  background-color:  #F7F7F7;;
+}
 /////font-size///
 .fs-12{
   font-size:$mute-font-size;
@@ -84,4 +86,16 @@ background-color:$brand-primary-color;
 /////other////
 .cursor-pointer{
   cursor: pointer;
+}
+.round-24{
+  border-radius: 24px;
+}
+.left-0 {
+  left:0
+}
+.h-38{
+  height: 38px;
+}
+.h-40{
+  height: 40px;
 }

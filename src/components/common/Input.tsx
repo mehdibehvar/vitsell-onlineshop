@@ -1,7 +1,7 @@
 import React from 'react'
 interface IProps{
     placeholder?:string,
-    label:string,
+    label?:string,
     className?:string,
     icon?:JSX.Element
 }
