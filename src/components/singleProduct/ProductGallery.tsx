@@ -18,6 +18,7 @@ const ProductGallery = () => {
     const handleShowModal=()=>{
       setShowModal(true);
     };
+console.log(thumbsSwiper);
 
   return (
     <section className='product_gallery d-flex flex-column justify-content-center align-items-center'>
@@ -73,7 +74,7 @@ const ProductGallery = () => {
     >
       {ProductImageDATA.map((item, index) => (
           <SwiperSlide key={item.alt}>
-            <div className="image_thumb_wrapper">
+            <div className="image_thumb_wrapper cursor-pointer">
               <Image
                 src={`${item.url}`}
                 alt={`${item.alt}`}

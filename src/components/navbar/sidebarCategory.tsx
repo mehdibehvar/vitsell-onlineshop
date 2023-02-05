@@ -1,6 +1,6 @@
 import React, { useRef } from "react";
-import { BsArrowLeft } from "react-icons/bs";
-import { ICategories } from "../../../../types";
+import { ICategories } from "../../../types";
+
 import {
   ArmchairIcon,
   BabyIcon,
@@ -9,10 +9,13 @@ import {
   PenIcon,
   ShopIcon,
   SportIcon,
-} from "../../icons/icons";
-import SubCategory from "./SubCategory";
+} from "../icons/icons";
+import { ShevronIcon } from "../icons/icons";
+import SubCategory from "./dropdownnavbar/SubCategory";
+import SidebarSubCategory from "./sidebarSubCategory";
+// import SubCategory from "./SubCategory";
 
-export const CategoriesLink = ({
+export const SidebarCategory = ({
   category,
   index,
 }: {
@@ -30,28 +33,28 @@ export const CategoriesLink = ({
     PenIcon: <PenIcon />,
     SportIcon: <SportIcon />,
   };
-  const handleHoverLink = () => {
-    listitemref.current?.classList.add("showsub");
+  const handleOpenCategory = () => {
+    listitemref.current?.classList.toggle("showsub");
     listitemref.current?.classList.remove("active_link");
   };
-  const handleUnhoverLink = () => {
-    listitemref.current?.classList.remove("showsub");
-  };
+
   return (
     <li
-      onMouseOver={handleHoverLink}
-      onMouseLeave={handleUnhoverLink}
+      onClick={handleOpenCategory}
       ref={listitemref}
-      className={`category_link ${index === 0 ? "active_link" : ""} `}
+      className={`category d-flex flex-column  w-100`}
     >
-      <div className="right">
+<div className="header w-100 d-flex justify-content-between align-items-center w-100">
+<div className="right d-flex gap-2">
         <span>{icons[icon]}</span>
-        <span className="title">{title}</span>
+        <span className="title fs-14 fw-400 text-gray">{title}</span>
       </div>
       <span className="arrow_left">
-        <BsArrowLeft />
+        <ShevronIcon />
       </span>
-      {/* <SubCategory subCategoryData={subCategory} /> */}
+</div>
+      <SidebarSubCategory subCategoryData={subCategory} />
+
     </li>
   );
 };

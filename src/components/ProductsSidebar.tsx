@@ -1,7 +1,5 @@
 import React, { useState } from "react";
 import { FiChevronDown } from "react-icons/fi";
-import "@szhsin/react-menu/dist/index.css";
-import "@szhsin/react-menu/dist/transitions/slide.css";
 import SearchInput from "./navbar/SearchInput";
 import { TickIcon } from "./icons/icons";
 import Link from "next/link";

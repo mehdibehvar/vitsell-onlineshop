@@ -21,6 +21,7 @@ export interface IProductdata{
         subtitle:string
      };
      export interface ICategories {
+        id:number;
       title:       string;
       icon:        string;
       subCategory: SubCategory[];

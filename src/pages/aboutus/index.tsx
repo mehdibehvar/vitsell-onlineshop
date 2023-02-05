@@ -1,6 +1,5 @@
 import Image from "next/image";
 import AboutusDashed from "../../components/common/aboutusDashed";
-import DashedCircle from "../../components/common/DashedCircle";
 import SectionsHeader from "../../components/common/SectionsHeader";
 import Footer from "../../components/footer/Footer";
 import {

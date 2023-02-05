@@ -1,9 +1,6 @@
-
 import LoginCard from "../../components/common/LoginCard";
 import DashedCircle from "../../components/common/DashedCircle";
-import Navbar from "../../components/navbar/Navbar";
-import Footer from "../../components/footer/Footer";
-import { Container, Row } from "reactstrap";
+import {  Row } from "reactstrap";
 import FluidLayout from "../../components/layouts/FluidLayout";
 import Image from "next/image";
 

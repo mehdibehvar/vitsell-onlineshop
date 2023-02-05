@@ -12,10 +12,7 @@ import ProducsBanner from "../../components/producsBanner";
 import ProductsGrid from "../../components/ProductsGrid";
 import ProductsSidebar from "../../components/ProductsSidebar";
 import { NextPageWithLayout } from "../_app";
-const SwiperSlider = dynamic(
-  () => import("../../components/slider/swiperSlider"),
-  { ssr: false }
-);
+
 const Products: NextPageWithLayout = () => {
   return (
     <>

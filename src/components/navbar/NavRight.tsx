@@ -1,8 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import { useState, useEffect } from "react";
-import ReactDropdown from "../common/domdownmenu/ReactDropdown";
-import ReactMenu from "../common/domdownmenu/ReactMenu";
+import { useState } from "react";
 
 
 import {
@@ -11,13 +9,14 @@ import {
   MostSellIcon,
   ShevronIcon,
 } from "../icons/icons";
+import SideBarMenu from "./SideBarMenu";
 import { DropDownNavbar } from "./dropdownnavbar/DropDownNavbar";
 
 const NavRight = () => {
   return (
     <div className="right_section">
       <div className="d-block d-sm-none">
-            <ReactMenu/>
+            <SideBarMenu/>
       </div>
     <Link href="/">
     <div className="logo_wrapper d-none d-sm-block">

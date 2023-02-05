@@ -14,6 +14,8 @@ import { NextPageWithLayout } from './_app'
 const Home: NextPageWithLayout= () => {
   return (
  <>
+
+
 <SliderSection/>
 <BannerSection/>
 <VitselDiscountSection/>

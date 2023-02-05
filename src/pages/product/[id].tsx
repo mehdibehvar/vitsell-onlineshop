@@ -1,7 +1,5 @@
 
 import { ReactElement } from "react";
-
-
 import Wizard from "../../components/common/Wizard";
 import FluidLayout from "../../components/layouts/FluidLayout";
 import MostProductInfo from "../../components/singleProduct/MostProductInfo";

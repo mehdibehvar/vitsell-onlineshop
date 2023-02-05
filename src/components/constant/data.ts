@@ -235,6 +235,7 @@ export const menuItems = [
 ];
 export const categoriesData:ICategories[] = [
   {
+    id:1,
     title: 'مد و پوشاک',
     icon: 'BlouseIcon',
     subCategory: [
@@ -283,37 +284,37 @@ export const categoriesData:ICategories[] = [
 
     ],
   },
-  {
+  {id:2,
     title: 'کالاهای سوپرمارکتی',
     icon: 'ShopIcon',
     subCategory: [
       {
-        title: 'مردانه',
+        title: 'کالاهای سوپرمارکتی',
         subList:["سویشرت و هودی مردانه",
         "سویشرت و هودی مردانه",
         "شلوار","لباس زیر","لباس زیر"]
       },
       {
-        title: 'مردانه',
+        title: 'کالاهای سوپرمارکتی',
         subList:["سویشرت و هودی مردانه",
         "سویشرت و هودی مردانه",
         "شلوار","لباس زیر","لباس زیر"]
       },
       {
-        title: 'مردانه',
+        title: 'اسباب بازی و کودک',
         subList:["سویشرت و هودی مردانه",
         "سویشرت و هودی مردانه",
         "شلوار","لباس زیر","لباس زیر"]
       },
       {
-        title: 'مردانه',
+        title: 'اسباب بازی و کودک',
         subList:["سویشرت و هودی مردانه",
         "سویشرت و هودی مردانه",
         "شلوار","لباس زیر","لباس زیر"]
       },
     ],
   },
-  {
+  {id:3,
     title:"اسباب بازی و کودک",
     icon: 'BabyIcon',
     subCategory: [
@@ -343,7 +344,7 @@ export const categoriesData:ICategories[] = [
       },
     ],
   },
-  {
+  {id:4,
     title: "زیبایی و سلامت",
     icon: 'BeautyIcon',
     subCategory: [
@@ -373,7 +374,7 @@ export const categoriesData:ICategories[] = [
       },
     ],
   },
-  {
+  {id:5,
     title: "خانه و آشپرخانه",
     icon: 'ArmchairIcon',
     subCategory: [
@@ -403,7 +404,7 @@ export const categoriesData:ICategories[] = [
       },
     ],
   },
-  {
+  {id:6,
     title: "لوازم تحریر و هنر",
     icon: 'PenIcon',
     subCategory: [
@@ -433,7 +434,7 @@ export const categoriesData:ICategories[] = [
       },
     ],
   },
-  {
+  {id:7,
     title: "ورزش و سفر",
     icon: 'SportIcon',
     subCategory: [
