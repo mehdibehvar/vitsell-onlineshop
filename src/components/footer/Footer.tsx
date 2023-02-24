@@ -144,7 +144,7 @@ const Footer = () => {
         <Col xs="12">
           <div className="footer_copyRight">
             <div></div>
-            <p>کلیه حقوق متعلق به شرکت ویستا است. </p>
+            <p className="mt-1">توسعه داده شده توسط مهدی بهور با <span className="text-danger fs-4">&#119072;</span></p>
           </div>
         </Col>
       </Row>
