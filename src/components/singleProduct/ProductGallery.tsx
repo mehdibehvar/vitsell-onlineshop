@@ -18,7 +18,7 @@ const ProductGallery = () => {
     const handleShowModal=()=>{
       setShowModal(true);
     };
-console.log(thumbsSwiper);
+
 
   return (
     <section className='product_gallery d-flex flex-column justify-content-center align-items-center'>

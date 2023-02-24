@@ -22,7 +22,7 @@ function ProductPicsModal({
 }: IProps) {
   const [selectedImage, setselectedImage] = useState<string>(ProductImageDATA[0].url);
 
-  console.log(selectedImage);
+ 
   
   return (
     <>

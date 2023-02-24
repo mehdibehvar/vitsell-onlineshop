@@ -1,4 +1,4 @@
-import dynamic from "next/dynamic";
+
 import { Col, Row } from "reactstrap";
 
 import PricingSidebar from "./PricingSidebar";
