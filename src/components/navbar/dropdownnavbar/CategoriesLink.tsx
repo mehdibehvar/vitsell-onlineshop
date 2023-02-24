@@ -51,7 +51,7 @@ export const CategoriesLink = ({
       <span className="arrow_left">
         <BsArrowLeft />
       </span>
-      {/* <SubCategory subCategoryData={subCategory} /> */}
+      <SubCategory subCategoryData={subCategory} />
     </li>
   );
 };
