@@ -105,7 +105,7 @@ const ProductsSidebar = () => {
             <ul className="d-flex flex-column align-items-center range-menu">
               <MultiRangeSlider
                 min={9000}
-                max={12238000}
+                max={14448000}
                 onChange={({ min, max }) => {
                   min + max;
                 }}

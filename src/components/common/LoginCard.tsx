@@ -8,8 +8,8 @@ import WithPassForm from "./forms/withpassForm";
 const LoginCard = () => {
   return (
      <div className="login_card">
-    <SendPhoneNumberForm/>
- {/* <ApproveCode/> */}
+    {/* <SendPhoneNumberForm/> */}
+ <ApproveCode/>
  {/* <WithPassForm/> */}
  {/* <ChangePassForm/> */}
       </div> 
